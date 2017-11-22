@@ -1,0 +1,1314 @@
+@prefix cat: <http://purl.org/net/esm-owl/categories#> .
+@prefix xmlns: <http://purl.org/net/esm-owl/stores#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xhv:   <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+cat:subCategoryOf a rdf:Property ;
+	rdfs:isDefinedBy <http://purl.org/net/esm-owl/categories#> ;
+	rdfs:label "subCategoryOf" ;
+	rdfs:comment "The subject is a subcategory of a category." ;
+	rdfs:range rdfs:Resource ;
+	rdfs:domain rdfs:Resource .
+
+cat:тв___аудио a rdfs:Resource ;
+    gr:name "TV & Audio"@en, "ТВ & Аудио"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+
+cat:телевизори a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "TV"@en, "Телевизори"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+    
+cat:телевизори_галантерија a rdfs:Resource;
+    cat:subCategoryOf cat:телевизори ;
+    gr:name "Галантерија за Телевизори"@en, "Галантерија за Телевизори"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+    
+cat:тв_додатоци a rdfs:Resource;
+    cat:subCategoryOf cat:телевизори ;
+    gr:name "ТВ додатоци"@en, "ТВ додатоци"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+
+cat:led_телевизори a rdfs:Resource;
+    cat:subCategoryOf cat:телевизори ;
+    gr:name "LED Телевизори"@en, "LED Телевизори"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+
+ cat:lcd_телевизори a rdfs:Resource;
+    cat:subCategoryOf cat:телевизори ;
+    gr:name "LCD Телевизори"@en, "LCD Телевизори"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+
+ cat:дигитални_сателитски_приемници a rdfs:Resource;
+    cat:subCategoryOf cat:телевизори ;
+    gr:name "Дигитални сателитски приемници"@en, "Дигитални сателитски приемници"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+     
+cat:преносно_аудио a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "Преносно аудио"@en, "Преносно аудио"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+
+cat:mp3_mp4_уреди a rdfs:Resource;
+    cat:subCategoryOf cat:преносно_аудио ;
+    gr:name "MP3/MP4 уреди"@en, "MP3/MP4 уреди"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+
+cat:радио_приемник a rdfs:Resource;
+    cat:subCategoryOf cat:преносно_аудио ;
+    gr:name "Радио приемник"@en, "Радио приемник"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+
+cat:ipod a rdfs:Resource;
+    cat:subCategoryOf cat:преносно_аудио ;
+    gr:name "IPod"@en, "IPod"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+
+cat:диктафони a rdfs:Resource;
+    cat:subCategoryOf cat:преносно_аудио ;
+    gr:name "Диктафони"@en, "Диктафони"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+
+cat:аудио_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "Аудио опрема"@en, "Аудио опрема"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+     
+cat:ac_dc_адаптери a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_опрема ;
+    gr:name "AC/DC адаптери"@en, "AC/DC адаптери"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+  
+cat:слушалки__микрофони_и_звучници a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_опрема ;
+    gr:name "Слушалки, микрофони и звучници"@en, "Слушалки, микрофони и звучници"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+  
+cat:аудио_опрема_галантерија a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_опрема ;
+    gr:name "Галантерија за Аудио опрема"@en, "Галантерија за Аудио опрема"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+  
+cat:аудио_системи a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "Аудио системи"@en, "Аудио системи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+
+cat:мини_системи a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_системи ;
+    gr:name "Мини Системи"@en, "Мини Системи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+
+cat:звучници_субвуфери a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_системи ;
+    gr:name "Звучници/Субвуфери"@en, "Звучници/Субвуфери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+
+cat:микро_системи a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_системи ;
+    gr:name "Микро Системи"@en, "Микро Системи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10055-180x135.png" .
+
+cat:тв_видео_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "ТВ/Видео опрема"@en, "ТВ/Видео опрема"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+
+cat:далечински_управувачи a rdfs:Resource;
+    cat:subCategoryOf cat:тв_видео_опрема ;
+    gr:name "Далечински управувачи"@en, "Далечински управувачи"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+
+cat:set_top_Box_и_антени a rdfs:Resource;
+    cat:subCategoryOf cat:тв_видео_опрема ;
+    gr:name "SET Top Box и Антени"@en, "SET Top Box и Антени"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
+
+cat:dvd_и_дигитални_ресивери a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "DVD и Дигитални ресивери"@en, "DVD и Дигитални ресивери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10059-180x135.png" .
+
+cat:мултимедијални_плеери a rdfs:Resource;
+    cat:subCategoryOf cat:dvd_и_дигитални_ресивери ;
+    gr:name "Мултимедијални плеери"@en, "Мултимедијални плеери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10059-180x135.png" .
+
+cat:dvd_и_blue_ray_плеери a rdfs:Resource;
+    cat:subCategoryOf cat:dvd_и_дигитални_ресивери ;
+    gr:name "DVD и Blue-Ray плеери"@en, "DVD и Blue-Ray плеери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10059-180x135.png" .
+
+cat:dvd_и_blue_ray_домашни_кина a rdfs:Resource;
+    cat:subCategoryOf cat:dvd_и_дигитални_ресивери ;
+    gr:name "DVD и Blue-Ray домашни кина"@en, "DVD и Blue-Ray домашни кина"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10059-180x135.png" .
+
+cat:gps a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "GPS"@en, "GPS"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10069-180x135.png" .
+
+cat:gps_додатоци a rdfs:Resource;
+    cat:subCategoryOf cat:gps ;
+    gr:name "GPS додатоци"@en, "GPS додатоци"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10069-180x135.png" .
+
+cat:gps_применици a rdfs:Resource;
+    cat:subCategoryOf cat:gps ;
+    gr:name "GPS применици"@en, "GPS применици"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10069-180x135.png" .
+
+cat:gps_софтвер a rdfs:Resource;
+    cat:subCategoryOf cat:gps ;
+    gr:name "GPS софтвер"@en, "GPS софтвер"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10069-180x135.png" .
+
+cat:домашно_кино a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "Домашно кино"@en, "Домашно кино"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10061-180x135.png" .
+
+cat:аудио_за_автомобил a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "Аудио за автомобил"@en, "Аудио за автомобил"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10063-180x135.png" .
+
+cat:ауто_појачала a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_за_автомобил ;
+    gr:name "Ауто појачала"@en, "Ауто појачала"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10063-180x135.png" .
+
+cat:cd_плеери a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_за_автомобил ;
+    gr:name "CD плеери"@en, "CD плеери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10063-180x135.png" .
+
+cat:ауто_звучници a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_за_автомобил ;
+    gr:name "Ауто звучници"@en, "Ауто звучници"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10063-180x135.png" .
+
+cat:hi_fi_аудио_уреди_за_во_автомобил a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_за_автомобил ;
+    gr:name "HI-FI Аудио уреди за во автомобил"@en, "HI-FI Аудио уреди за во автомобил"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10063-180x135.png" .
+  
+cat:опрема_за_напојување a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "Опрема за напојување"@en, "Опрема за напојување"@mk ;
+    foaf:made "https://www.centro.hr/BinaryLibrary/c69ae349-dfc1-48a1-9578-74fa9eb22e7e/Resized_4478a73d-fe90-4622-94dc-541f5159cf89/180_180.png" .
+ 
+cat:опрема_за_напојување_галантерија a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_напојување ;
+    gr:name "Галантерија за Опрема за напојување"@en, "Галантерија за Опрема за напојување"@mk ;
+    foaf:made "https://www.centro.hr/BinaryLibrary/c69ae349-dfc1-48a1-9578-74fa9eb22e7e/Resized_4478a73d-fe90-4622-94dc-541f5159cf89/180_180.png" .
+ 
+cat:фенери a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_напојување ;
+    gr:name "Фенери"@en, "Фенери"@mk ;
+    foaf:made "https://www.centro.hr/BinaryLibrary/c69ae349-dfc1-48a1-9578-74fa9eb22e7e/Resized_4478a73d-fe90-4622-94dc-541f5159cf89/180_180.png" .
+ 
+cat:батерии a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "Батерии"@en, "Батерии"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+ 
+cat:фото___видео a rdfs:Resource;
+    gr:name "Photo & Video"@en, "Фото & Видео"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10084-180x135.png" .
+
+cat:мемориски_картички_и_читачи a rdfs:Resource;
+    cat:subCategoryOf cat:фото___видео ;
+    gr:name "Мемориски Картички и читачи"@en, "Мемориски Картички и читачи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:ms_картици a rdfs:Resource;
+    cat:subCategoryOf cat:мемориски_картички_и_читачи ;
+    gr:name "MS Картици"@en, "MS Картици"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:cf_картици a rdfs:Resource;
+    cat:subCategoryOf cat:мемориски_картички_и_читачи ;
+    gr:name "CF Картици"@en, "CF Картици"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:sd_картици a rdfs:Resource;
+    cat:subCategoryOf cat:мемориски_картички_и_читачи ;
+    gr:name "SD Картици"@en, "SD Картици"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:xd_картици a rdfs:Resource;
+    cat:subCategoryOf cat:мемориски_картички_и_читачи ;
+    gr:name "XD Картици"@en, "XD Картици"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:mmc_картици a rdfs:Resource;
+    cat:subCategoryOf cat:мемориски_картички_и_читачи ;
+    gr:name "MMC Картици"@en, "MMC Картици"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:micro_sd_картици a rdfs:Resource;
+    cat:subCategoryOf cat:мемориски_картички_и_читачи ;
+    gr:name "Micro SD Картици"@en, "Micro SD Картици"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:рамки_за_фотографии a rdfs:Resource;
+    cat:subCategoryOf cat:фото___видео ;
+    gr:name "Рамки за фотографии"@en, "Рамки за фотографии"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:камери a rdfs:Resource;
+    cat:subCategoryOf cat:фото___видео ;
+    gr:name "Камери"@en, "Камери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:дититални_фотоапарати a rdfs:Resource;
+    cat:subCategoryOf cat:фото___видео ;
+    gr:name "Дититални фотоапарати"@en, "Дититални фотоапарати"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:хибридни_дигитални_фотоапарати a rdfs:Resource;
+    cat:subCategoryOf cat:дититални_фотоапарати ;
+    gr:name "Хибридни дигитални фотоапарати"@en, "Хибридни дигитални фотоапарати"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:дигитални_фотоапарати a rdfs:Resource;
+    cat:subCategoryOf cat:дититални_фотоапарати ;
+    gr:name "Дигитални фотоапарати"@en, "Дигитални фотоапарати"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:dslr_камери a rdfs:Resource;
+    cat:subCategoryOf cat:дититални_фотоапарати ;
+    gr:name "DSLR Камери"@en, "DSLR Камери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:mirrorless a rdfs:Resource;
+    cat:subCategoryOf cat:дититални_фотоапарати ;
+    gr:name "Mirrorless"@en, "Mirrorless"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:опрема_за_фото_и_видео a rdfs:Resource;
+    cat:subCategoryOf cat:фото___видео ;
+    gr:name "према за Фото и Видео"@en, "према за Фото и Видео"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:торби_за_камери a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_фото_и_видео ;
+    gr:name "Торби за камери"@en, "Торби за камери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:галантерија_за_фотоапарати a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_фото_и_видео ;
+    gr:name "Галантерија за фотоапарати"@en, "Галантерија за фотоапарати"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:триподи a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_фото_и_видео ;
+    gr:name "Триподи"@en, "Триподи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:опрема_за_фото_и_видео_батерии a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_фото_и_видео ;
+    gr:name "Батерии"@en, "Батерии"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:галантерија_за_камери a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_фото_и_видео ;
+    gr:name "Галантерија за камери"@en, "Галантерија за камери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:дигитална_касета a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_фото_и_видео ;
+    gr:name "Дигитална касета"@en, "Дигитална касета"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:фотоапарати a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_фото_и_видео ;
+    gr:name "Фотоапарати"@en, "Фотоапарати"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:cd_плеери a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_фото_и_видео ;
+    gr:name "CD плеери"@en, "CD плеери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:полначи a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_фото_и_видео ;
+    gr:name "Полначи"@en, "Полначи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:видео_надзор a rdfs:Resource;
+    cat:subCategoryOf cat:фото___видео ;
+    gr:name "Видео Надзор"@en, "Видео Надзор"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:камери_за_видео_надзор a rdfs:Resource;
+    cat:subCategoryOf cat:видео_надзор ;
+    gr:name "Камери за видео надзор"@en, "Камери за видео надзор"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:двр_уреди_за_снимање a rdfs:Resource;
+    cat:subCategoryOf cat:видео_надзор ;
+    gr:name "ДВР Уреди за снимање"@en, "ДВР Уреди за снимање"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:дополнителна_опрема_за_видео_надзор a rdfs:Resource;
+    cat:subCategoryOf cat:видео_надзор ;
+    gr:name "Дополнителна опрема за видео надзор"@en, "Дополнителна опрема за видео надзор"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:аларми a rdfs:Resource;
+    cat:subCategoryOf cat:видео_надзор ;
+    gr:name "Аларми"@en, "Аларми"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:it_продукти a rdfs:Resource;
+    gr:name "IT Products"@en, "IT Продукти"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10032-180x135.png" .   
+
+cat:таблет a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Таблет"@en, "Таблет"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:опрема_за_таблети a rdfs:Resource;
+    cat:subCategoryOf cat:таблет ;
+    gr:name "Опрема за таблети"@en, "Опрема за таблети"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:футроли_за_таблети a rdfs:Resource;
+    cat:subCategoryOf cat:таблет ;
+    gr:name "Футроли за таблети"@en, "Футроли за таблети"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:таблети a rdfs:Resource;
+    cat:subCategoryOf cat:таблет ;
+    gr:name "Таблети"@en, "Таблети"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:графички_таблети a rdfs:Resource;
+    cat:subCategoryOf cat:таблет ;
+    gr:name "Графички Таблети"@en, "Графички Таблети"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:печатачи_и_скенери a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Печатачи и скенери"@en, "Печатачи и скенери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:mpf a rdfs:Resource;
+    cat:subCategoryOf cat:печатачи_и_скенери ;
+    gr:name "MFP"@en, "MFP"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:Инкџет_mpf a rdfs:Resource;
+    cat:subCategoryOf cat:печатачи_и_скенери ;
+    gr:name "Инкџет MFP"@en, "Инкџет MFP"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:печатари a rdfs:Resource;
+    cat:subCategoryOf cat:печатачи_и_скенери ;
+    gr:name "Печатари"@en, "Печатари"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:скенери a rdfs:Resource;
+    cat:subCategoryOf cat:печатачи_и_скенери ;
+    gr:name "Скенери"@en, "Скенери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:инкџет_принтери a rdfs:Resource;
+    cat:subCategoryOf cat:печатачи_и_скенери ;
+    gr:name "Инкџет принтери"@en, "АларИнкџет принтерими"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:фотокопири a rdfs:Resource;
+    cat:subCategoryOf cat:печатачи_и_скенери ;
+    gr:name "Фотокопири"@en, "Фотокопири"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:потрошен_материјал__тонери__мастила_и_хартија_ a rdfs:Resource;
+    cat:subCategoryOf cat:печатачи_и_скенери ;
+    gr:name "Потрошен материјал (Тонери, мастила и хартија)"@en, "Потрошен материјал (Тонери, мастила и хартија)"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:компјутерска_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Компјутерска опрема"@en, "Компјутерска опрема"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:играчки_контроли a rdfs:Resource;
+    cat:subCategoryOf cat:компјутерска_опрема ;
+    gr:name "Играчки контроли"@en, "Играчки контроли"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:тастатури a rdfs:Resource;
+    cat:subCategoryOf cat:компјутерска_опрема ;
+    gr:name "Тастатури"@en, "Тастатури"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:pc_слушалки a rdfs:Resource;
+    cat:subCategoryOf cat:компјутерска_опрема ;
+    gr:name "PC Слушалки"@en, "PC Слушалки"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:компјутерски_звучници a rdfs:Resource;
+    cat:subCategoryOf cat:компјутерска_опрема ;
+    gr:name "Компјутерски звучници"@en, "Компјутерски звучници"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:pc_микрофони a rdfs:Resource;
+    cat:subCategoryOf cat:компјутерска_опрема ;
+    gr:name "PC Mикрофони"@en, "PC Mикрофони"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:веб_камери a rdfs:Resource;
+    cat:subCategoryOf cat:компјутерска_опрема ;
+    gr:name "Веб камери"@en, "Веб камери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:глувче a rdfs:Resource;
+    cat:subCategoryOf cat:компјутерска_опрема ;
+    gr:name "Глувче"@en, "Глувче"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:мрежа a rdfs:Resource;
+    cat:subCategoryOf cat:компјутерска_опрема ;
+    gr:name "Мрежа"@en, "Мрежа"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:преносни_кутии a rdfs:Resource;
+    cat:subCategoryOf cat:компјутерска_опрема ;
+    gr:name "Преносни кутии"@en, "Преносни кутии"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:разни_компјутерски_додатоци a rdfs:Resource;
+    cat:subCategoryOf cat:компјутерска_опрема ;
+    gr:name "Разни компјутерски додатоци"@en, "Разни компјутерски додатоци"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:софтвер a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Софтвер"@en, "Софтвер"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:канцелариски_мебел_и_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Канцелариски мебел и опрема"@en, "Канцелариски мебел и опрема"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:преносни_компјутери_и_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Преносни компјутери и опрема"@en, "АлПреносни компјутери и опремаарми"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:дополнителна_опрема_за_преносни_компјутери a rdfs:Resource;
+    cat:subCategoryOf cat:преносни_компјутери_и_опрема ;
+    gr:name "Дополнителна опрема за Преносни Компјутери"@en, "Дополнителна опрема за Преносни Компјутери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:ташни a rdfs:Resource;
+    cat:subCategoryOf cat:дополнителна_опрема_за_преносни_компјутери ;
+    gr:name "Ташни"@en, "Ташни"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:торби_за_преносни_компјутери a rdfs:Resource ;
+    owl:sameAs cat:ташни .
+
+cat:ладилник__cooler__со_лежиште a rdfs:Resource;
+    cat:subCategoryOf cat:дополнителна_опрема_за_преносни_компјутери ;
+    gr:name "Ладилник (Cooler) со лежиште"@en, "Ладилник (Cooler) со лежиште"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:адаптери_за_струја a rdfs:Resource;
+    cat:subCategoryOf cat:дополнителна_опрема_за_преносни_компјутери ;
+    gr:name "Адаптери за струја"@en, "Адаптери за струја"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:дополнителна_опрема_за_преносни_компјутери_батерии a rdfs:Resource;
+    cat:subCategoryOf cat:дополнителна_опрема_за_преносни_компјутери ;
+    gr:name "Батерии"@en, "Батерии"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:средства_за_чистење_на_lcd_led_екрани a rdfs:Resource;
+    cat:subCategoryOf cat:дополнителна_опрема_за_преносни_компјутери ;
+    gr:name "Средства за чистење на LCD/LED екрани"@en, "Средства за чистење на LCD/LED екрани"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:дополнителна_опрема_за_преносни_компјутери_останато a rdfs:Resource;
+    cat:subCategoryOf cat:дополнителна_опрема_за_преносни_компјутери ;
+    gr:name "Останато"@en, "Останато"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:ultrabooks a rdfs:Resource;
+    cat:subCategoryOf cat:преносни_компјутери_и_опрема ;
+    gr:name "Ultrabooks"@en, "Ultrabooks"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:преносни_компјутери a rdfs:Resource;
+    cat:subCategoryOf cat:преносни_компјутери_и_опрема ;
+    gr:name "Преносни компјутери"@en, "Преносни компјутери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:електронски_книги a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Електронски книги"@en, "Електронски книги"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:it_продукти_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Опрема"@en, "Опрема"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:it_кабли a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти_опрема ;
+    gr:name "IT кабли"@en, "IT кабли"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:cd_футрола a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти_опрема ;
+    gr:name "CD футрола"@en, "CD футрола"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:опрема_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти_опрема ;
+    gr:name "Опрема"@en, "Опрема"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:cooling_pads a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти_опрема ;
+    gr:name "Cooling Pads"@en, "Cooling Pads"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:мрежна_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти_опрема ;
+    gr:name "Мрежна опрема"@en, "Мрежна опрема"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:заштитни_фолии a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти_опрема ;
+    gr:name "Заштитни фолии"@en, "Заштитни фолии"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:адаптери a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти_опрема ;
+    gr:name "Адаптери"@en, "Адаптери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:држачи a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти_опрема ;
+    gr:name "Држачи"@en, "Држачи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:опрема_за_напојување a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Опрема за напојување"@en, "Опрема за напојување"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:ups_и_продолжни_кабли a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_напојување ;
+    gr:name "UPS и Продолжни кабли"@en, "UPS и Продолжни кабли"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:адаптери_за_напојување a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_напојување ;
+    gr:name "Адаптери за напојување"@en, "Адаптери за напојување"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:раздвојувачи a rdfs:Resource;
+    cat:subCategoryOf cat:опрема_за_напојување ;
+    gr:name "Раздвојувачи"@en, "Раздвојувачи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:дигитрони a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Дигитрони"@en, "Дигитрони"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:монитори_и_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Монитори и опрема"@en, "Монитори и опрема"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:платна_за_проектори a rdfs:Resource;
+    cat:subCategoryOf cat:монитори_и_опрема ;
+    gr:name "Платна за проектори"@en, "Платна за проектори"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:проектори a rdfs:Resource;
+    cat:subCategoryOf cat:монитори_и_опрема ;
+    gr:name "Проектори"@en, "Проектори"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:монитори a rdfs:Resource;
+    cat:subCategoryOf cat:монитори_и_опрема ;
+    gr:name "Монитори"@en, "Монитори"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:hdd___usb_флеш a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "HDD & USB Флеш"@en, "HDD & USB Флеш"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:внатрешен_hdd a rdfs:Resource;
+    cat:subCategoryOf cat:hdd___usb_флеш ;
+    gr:name "Внатрешен HDD"@en, "Внатрешен HDD"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:usb_флеш a rdfs:Resource;
+    cat:subCategoryOf cat:hdd___usb_флеш ;
+    gr:name "USB Флеш"@en, "USB Флеш"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:надворешен_hdd a rdfs:Resource;
+    cat:subCategoryOf cat:hdd___usb_флеш ;
+    gr:name "Надворешен HDD"@en, "Надворешен HDD"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:персонални_компјутери a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Персонални компјутери"@en, "Персонални компјутери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:компјутери a rdfs:Resource;
+    cat:subCategoryOf cat:персонални_компјутери ;
+    gr:name "Компјутери"@en, "Компјутери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:опрема_за_компјутери a rdfs:Resource;
+    cat:subCategoryOf cat:персонални_компјутери ;
+    gr:name "Опрема за компјутери"@en, "Опрема за компјутери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:консумативи_за_принтери a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "Консумативи за принтери"@en, "Консумативи за принтери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:консумативи_за_инкџет a rdfs:Resource;
+    cat:subCategoryOf cat:консумативи_за_принтери ;
+    gr:name "Консумативи за инкџет"@en, "Консумативи за инкџет"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:дополнителна_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:консумативи_за_принтери ;
+    gr:name "Дополнителна опрема"@en, "Дополнителна опрема"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:медиа_консумативи a rdfs:Resource;
+    cat:subCategoryOf cat:консумативи_за_принтери ;
+    gr:name "Медиа консумативи"@en, "Медиа консумативи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:консумативи_за_ласер_принтери a rdfs:Resource;
+    cat:subCategoryOf cat:консумативи_за_принтери ;
+    gr:name "Консумативи за ласер.принтери"@en, "Консумативи за ласер.принтери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:cd_dvd_дискови a rdfs:Resource;
+    cat:subCategoryOf cat:it_продукти ;
+    gr:name "CD/DVD дискови"@en, "CD/DVD дискови"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:dvd_дискови a rdfs:Resource;
+    cat:subCategoryOf cat:cd_dvd_дискови ;
+    gr:name "DVD дискови"@en, "DVD дискови"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:cd_дискови a rdfs:Resource;
+    cat:subCategoryOf cat:cd_dvd_дискови ;
+    gr:name "CD дискови"@en, "CD дискови"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:комуникации_и_телефони a rdfs:Resource;
+    gr:name "Communication and phones"@en, "Комуникации и телефони"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10079-180x135.png" .
+
+cat:акцесоари_за_телефони a rdfs:Resource;
+    cat:subCategoryOf cat:комуникации_и_телефони ;
+    gr:name "Акцесоари за телефони"@en, "Акцесоари за телефони"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:аудио_додатоци a rdfs:Resource;
+    cat:subCategoryOf cat:акцесоари_за_телефони ;
+    gr:name "Аудио додатоци"@en, "Аудио додатоци"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:docking_station_for_android a rdfs:Resource;
+    cat:subCategoryOf cat:акцесоари_за_телефони ;
+    gr:name "DOCKING STATION FOR ANDROID"@en, "DOCKING STATION FOR ANDROID"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:паметни_часовници_и_алки a rdfs:Resource;
+    cat:subCategoryOf cat:акцесоари_за_телефони ;
+    gr:name "Паметни часовници и алки"@en, "Паметни часовници и алки"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:docking_station_for_apple a rdfs:Resource;
+    cat:subCategoryOf cat:акцесоари_за_телефони ;
+    gr:name "DOCKING STATION FOR APPLE"@en, "DOCKING STATION FOR APPLE"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:футроли a rdfs:Resource;
+    cat:subCategoryOf cat:акцесоари_за_телефони ;
+    gr:name "Футроли"@en, "Футроли"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:мобилни_телефони_и_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:комуникации_и_телефони ;
+    gr:name "Мобилни телефони и опрема"@en, "Мобилни телефони и опрема"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:мобилни_телефони a rdfs:Resource;
+    cat:subCategoryOf cat:мобилни_телефони_и_опрема ;
+    gr:name "Мобилни телефони"@en, "Мобилни телефони"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:power_bank a rdfs:Resource;
+    cat:subCategoryOf cat:мобилни_телефони_и_опрема ;
+    gr:name "Power bank"@en, "Power bank"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:bluetooth_играчки a rdfs:Resource;
+    cat:subCategoryOf cat:мобилни_телефони_и_опрема ;
+    gr:name "Bluetooth gadgets"@en, "Bluetooth играчки"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:телефони a rdfs:Resource;
+    cat:subCategoryOf cat:комуникации_и_телефони ;
+    gr:name "Телефони"@en, "Телефони"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:стандардни_телефони a rdfs:Resource;
+    cat:subCategoryOf cat:телефони ;
+    gr:name "Стандардни телефони"@en, "Стандардни телефони"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:факс a rdfs:Resource;
+    cat:subCategoryOf cat:телефони ;
+    gr:name "Факс"@en, "Факс"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:телефони_галантерија a rdfs:Resource;
+    cat:subCategoryOf cat:телефони ;
+    gr:name "Галантерија за Телефони"@en, "Галантерија за Телефони"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:бежичен_телефон a rdfs:Resource;
+    cat:subCategoryOf cat:телефони ;
+    gr:name "Бежичен телефон"@en, "Бежичен телефон"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:pbx_системи a rdfs:Resource;
+    cat:subCategoryOf cat:комуникации_и_телефони ;
+    gr:name "PBX Системи"@en, "PBX Системи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:pbx_и_опрема a rdfs:Resource;
+    cat:subCategoryOf cat:pbx_системи ;
+    gr:name "PBX и опрема"@en, "PBX и опрема"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:греење__ладење_и_бојлери a rdfs:Resource;
+    gr:name "Heating, Cooling and Boilers"@en, "Греење, Ладење и Бојлери"@mk ;
+    foaf:made "http://www.akcijeikatalozi.rs/media/catalog/category/bela-tehnika_1.png" .  
+
+cat:печки_и_камини a rdfs:Resource;
+    cat:subCategoryOf cat:греење__ладење_и_бојлери ;
+    gr:name "Печки и камини"@en, "Печки и камини"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:стандардни_сплит_климатизери a rdfs:Resource;
+    cat:subCategoryOf cat:греење__ладење_и_бојлери ;
+    gr:name "Стандардни Сплит Климатизери"@en, "Стандардни Сплит Климатизери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:мулти_сплит a rdfs:Resource;
+    cat:subCategoryOf cat:стандардни_сплит_климатизери ;
+    gr:name "Мулти сплит"@en, "Мулти сплит"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:клими a rdfs:Resource;
+    cat:subCategoryOf cat:стандардни_сплит_климатизери ;
+    gr:name "Клими"@en, "Клими"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:стандард_сплит a rdfs:Resource;
+    cat:subCategoryOf cat:стандардни_сплит_климатизери ;
+    gr:name "Стандард сплит"@en, "Стандард сплит"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:бојлери a rdfs:Resource;
+    cat:subCategoryOf cat:греење__ладење_и_бојлери ;
+    gr:name "Бојлери"@en, "Бојлери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:инвертер_климатизери a rdfs:Resource;
+    cat:subCategoryOf cat:греење__ладење_и_бојлери ;
+    gr:name "Инвертер Климатизери"@en, "Инвертер Климатизери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:инвертер a rdfs:Resource;
+    cat:subCategoryOf cat:инвертер_климатизери ;
+    gr:name "Инвертер"@en, "Инвертер"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:греалки a rdfs:Resource;
+    cat:subCategoryOf cat:греење__ладење_и_бојлери ;
+    gr:name "Греалки"@en, "Греалки"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:бела_техника a rdfs:Resource;
+    gr:name "White Goods"@en, "Бела Техника"@mk ;
+    foaf:made "http://www.akcijeikatalozi.rs/media/catalog/category/bela-tehnika_1.png" .  
+
+cat:машини_за_садови a rdfs:Resource;
+    cat:subCategoryOf cat:бела_техника ;
+    gr:name "Машини за садови"@en, "Машини за садовиКафе"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вградлива_бела_техника a rdfs:Resource;
+    cat:subCategoryOf cat:бела_техника ;
+    gr:name "Вградлива бела техника"@en, "Вградлива бела техника"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вградни_машини_за_миење_садови a rdfs:Resource;
+    cat:subCategoryOf cat:вградлива_бела_техника ;
+    gr:name "Вградлива бела техника"@en, "Вградлива бела техника"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:ввградлива_бела_техника_машини_за_садови a rdfs:Resource;
+    owl:sameAs cat:вградни_машини_за_миење_садови .
+
+cat:вградни_фрижидери a rdfs:Resource;
+    cat:subCategoryOf cat:вградлива_бела_техника ;
+    gr:name "Вградни фрижидери"@en, "Вградни фрижидери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вградлива_бела_техника_ладилници a rdfs:Resource;
+    cat:subCategoryOf cat:вградлива_бела_техника ;
+    gr:name "Ладилници"@en, "Ладилници"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вгадна_машина_за_перење_алишта a rdfs:Resource;
+    cat:subCategoryOf cat:вградлива_бела_техника ;
+    gr:name "Вгадна машина за перење алишта"@en, "Вгадна машина за перење алишта"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вградни_фурни a rdfs:Resource;
+    cat:subCategoryOf cat:вградлива_бела_техника ;
+    gr:name "Вградни фурни"@en, "Вградни фурни"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вградлива_бела_техника_фурни a rdfs:Resource;
+    owl:sameAs cat:вградни_фурни .
+
+cat:вградни_плотни_и_фурни__комплети_ a rdfs:Resource;
+    cat:subCategoryOf cat:вградлива_бела_техника ;
+    gr:name "Вградни плотни и фурни (Комплети)"@en, "Вградни плотни и фурни (Комплети)"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вградни_плотни a rdfs:Resource;
+    cat:subCategoryOf cat:вградлива_бела_техника ;
+    gr:name "Вградни плотни"@en, "Вградни плотни"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вградлива_бела_техника_плотни a rdfs:Resource;
+    owl:sameAs cat:вградни_плотни .
+
+cat:вградни_микробранови_печки a rdfs:Resource;
+    cat:subCategoryOf cat:вградлива_бела_техника ;
+    gr:name "Вградни микробранови печки"@en, "Вградни микробранови печки"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вградлива_бела_техника_микробранови a rdfs:Resource;
+    owl:sameAs cat:вградни_микробранови_печки .
+
+cat:вградни_аспиратори a rdfs:Resource;
+    cat:subCategoryOf cat:вградлива_бела_техника ;
+    gr:name "Вградни аспиратори"@en, "Вградни аспиратори"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:акцесоари_за_бела_техника a rdfs:Resource;
+    cat:subCategoryOf cat:бела_техника ;
+    gr:name "Акцесоари за бела техника"@en, "Акцесоари за бела техника"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:акцесоари_за_бела_техника_галантерија a rdfs:Resource;
+    cat:subCategoryOf cat:акцесоари_за_бела_техника ;
+    gr:name "Галантерија за Акцесоари за бела техника"@en, "Галантерија за Акцесоари за бела техника"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:сушални a rdfs:Resource;
+    cat:subCategoryOf cat:бела_техника ;
+    gr:name "Сушални"@en, "Сушални"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:шпорети a rdfs:Resource;
+    cat:subCategoryOf cat:бела_техника ;
+    gr:name "Шпорети"@en, "Шпорети"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:машини_за_алишта a rdfs:Resource;
+    cat:subCategoryOf cat:бела_техника ;
+    gr:name "Машини за алишта"@en, "Машини за алишта"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:аспиратори a rdfs:Resource;
+    cat:subCategoryOf cat:бела_техника ;
+    gr:name "Аспиратори"@en, "Аспиратори"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:фрижидери_и_ладилници a rdfs:Resource;
+    cat:subCategoryOf cat:бела_техника ;
+    gr:name "Фрижидери и Ладилници"@en, "Фрижидери и Ладилници"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:ладилници a rdfs:Resource;
+    cat:subCategoryOf cat:фрижидери_и_ладилници ;
+    gr:name "Ладилници"@en, "Ладилници"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:фрижидери a rdfs:Resource;
+    cat:subCategoryOf cat:фрижидери_и_ладилници ;
+    gr:name "Фрижидери"@en, "Фрижидери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:двокрилни_ладилници a rdfs:Resource;
+    cat:subCategoryOf cat:фрижидери_и_ладилници ;
+    gr:name "Двокрилни ладилници"@en, "Двокрилни ладилници"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:автомати_за_вода a rdfs:Resource;
+    cat:subCategoryOf cat:бела_техника ;
+    gr:name "Автомати за вода"@en, "Автомати за вода"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:мали_апарати a rdfs:Resource;
+    gr:name "Home Appliances"@en, "Мали Апарати"@mk ;
+    foaf:made "https://www.costco.ca/wcsstore/CostcoCABCCatalogAssetStore/category-tiles/blenders-juicers-150427.png" .   
+
+cat:кафе a rdfs:Resource;
+    cat:subCategoryOf cat:мали_апарати ;
+    gr:name "Кафе"@en, "Кафе"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:кујнски_апарати a rdfs:Resource;
+    cat:subCategoryOf cat:мали_апарати ;
+    gr:name "Кујнски апарати"@en, "Кујнски апарати"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:мелница_за_кафе a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Мелница за кафе"@en, "Мелница за кафе"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:кујнски_ваги a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Кујнски ваги"@en, "Кујнски ваги"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:скари a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Скари"@en, "Скари"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:фритези a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Фритези"@en, "Фритези"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:кафемати a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Кафемати"@en, "Кафемати"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:решоа a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Решоа"@en, "Решоа"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:пасатори a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Пасатори"@en, "Пасатори"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:електрични_бокали a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Електрични бокали"@en, "Електрични бокали"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:бокал_за_вода_со_филтер a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Бокал за вода со филтер"@en, "Бокал за вода со филтер"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:електрични_апарати a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Електрични апарати"@en, "Електрични апарати"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:мини_рерни a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Мини рерни"@en, "Мини рерни"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:кујнски_роботи a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Кујнски роботи"@en, "Кујнски роботи"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:блендери a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Блендери"@en, "Блендери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:микробранови_печки a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Микробранови печки"@en, "Микробранови печки"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:микробранови a rdfs:Resource;
+    owl:sameAs cat:микробранови_печки .
+
+cat:миксери a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Миксери"@en, "Миксери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:уреди_за_готвење_на_пареа a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Уреди за готвење на пареа"@en, "Уреди за готвење на пареа"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:тостери a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Тостери"@en, "Тостери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:електрични_машини_за_мелење_месо a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Електрични машини за мелење месо"@en, "Електрични машини за мелење месо"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:мелница_за_месо a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Мелница за месо"@en, "Мелница за месо"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:соковници a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Соковници"@en, "Соковници"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:multi_cooker a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Multi Cooker"@en, "Multi Cooker"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:апарати_за_правење_леб a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Апарати за правење леб"@en, "Апарати за правење леб"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:машини_за_рендање_и_нарежување a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Машини за рендање и нарежување"@en, "Машини за рендање и нарежувањеIPL"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:кујнски_прибор a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Кујнски прибор"@en, "Кујнски прибор"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:тави_и_тенџериња a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Tави и тенџериња"@en, "Tави и тенџериња"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:разни_апарати a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Разни апарати"@en, "Разни апарати"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:потрошни_материјали a rdfs:Resource;
+    cat:subCategoryOf cat:мали_апарати ;
+    gr:name "Потрошни материјали"@en, "Потрошни материјали"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:потрошни_материјали_останато a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Останато"@en, "Останато"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:лична_грижа_и_убавина a rdfs:Resource;
+    cat:subCategoryOf cat:мали_апарати ;
+    gr:name "Лична грижа и убавина"@en, "Лична грижа и убавина"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:ipl a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "IPL"@en, "IPL"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:обликувачи_за_коса a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Обликувачи за коса"@en, "Обликувачи за коса"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:масажери_за_стапала a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Масажери за стапала"@en, "Масажери за стапала"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:машинки_за_потстрижување a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Машинки за потстрижување"@en, "Машинки за потстрижување"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:депилатари a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Депилатари"@en, "Депилатари"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вага a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Вага"@en, "Вага"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:електрични_четки a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Електрични четки"@en, "Електрични четки"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:фенови a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Фенови"@en, "Фенови"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:апарати_за_нега a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Апарати за нега"@en, "Апарати за нега"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:апарат_за_крвен_притисок a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Апарат за крвен притисок"@en, "Апарат за крвен притисок"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:машинка_за_бричење a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Машинка за бричење"@en, "Машинка за бричењеПегли"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:масажери a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Масажери"@en, "Масажери"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:термометри a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Термометри"@en, "Термометри"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:диспанзер_за_сапун a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Диспанзер за сапун"@en, "Диспанзер за сапун"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:чистач_за_облека a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Чистач за облека"@en, "Чистач за облека"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:маникир_и_педикир a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Маникир и педикир"@en, "Маникир и педикир"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:домашни_апарати a rdfs:Resource;
+    cat:subCategoryOf cat:мали_апарати ;
+    gr:name "Домашни апарати"@en, "Домашни апарати"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:пегли a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Пегли"@en, "Пегли"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:машини_за_шиење a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Машини за шиење"@en, "Машини за шиење"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:вентилатори_и_прочистувачи_на_воздух a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Вентилатори и Прочистувачи на воздух"@en, "Вентилатори и Прочистувачи на воздух"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:правосмукалки a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Правосмукалки"@en, "Правосмукалки"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:апарати_за_филтрирање_вода a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Апарати за филтрирање вода"@en, "Апарати за филтрирање вода"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:чистач_со_пареа a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Чистач со пареа"@en, "Чистач со пареа"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:додатоци a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Додатоци"@en, "Додатоци"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10009-180x135.png" .
+
+cat:забава___рекреација a rdfs:Resource;
+    gr:name "Fun & Recreation"@en, "Забава & Рекреација"@mk ;
+    foaf:made "http://mediaprocessor.websimages.com/width/206/crop/0,0,193x169/www.noxxenterprises.com/consoles.png" .  
+
+cat:книги a rdfs:Resource;
+    cat:subCategoryOf cat:забава___рекреација ;
+    gr:name "Books"@en, "Книги"@mk ;
+    foaf:made "http://emojipop.net/data/images/emoji_set_431.png" .  
+
+ cat:опрема a rdfs:Resource;
+    cat:subCategoryOf cat:забава___рекреација ;
+    gr:name "Equipment"@en, "Опрема"@mk ;
+    foaf:made "https://static-ptl-eu.gcdn.co/dcont/fb/image/wot_specials_cybersales_icons_equipment.png" .  
+
+ cat:софтвер_за_игри a rdfs:Resource;
+    cat:subCategoryOf cat:забава___рекреација ;
+    gr:name "Games"@en, "Софтвер за игри"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10224-180x135.png" .  
+
+ cat:велосипеди a rdfs:Resource;
+    cat:subCategoryOf cat:забава___рекреација ;
+    gr:name "Bicycles"@en, "Велосипеди"@mk ;
+    foaf:made "http://www.kcp.gr/image/cache/data/KCP/piston-175x175.png" .  
+
+ cat:конзоли a rdfs:Resource;
+    cat:subCategoryOf cat:забава___рекреација ;
+    gr:name "Consoles"@en, "Конзоли"@mk ;
+    foaf:made "http://setec.mk/image/cache/data/Sliki/10226-180x135.png" .  
+
+ cat:спорт a rdfs:Resource;
+    cat:subCategoryOf cat:забава___рекреација ;
+    gr:name "Sport"@en, "Спорт"@mk ;
+    foaf:made "https://s3.amazonaws.com/silhouettesfree/sports.png" .  
+
+ cat:играчки a rdfs:Resource;
+    cat:subCategoryOf cat:забава___рекреација ;
+    gr:name "Toys"@en, "Играчки"@mk ;
+    foaf:made "http://rcdn-2.fishpond.co.nz/0118/837/462/255210783/5.jpeg" .  
+      

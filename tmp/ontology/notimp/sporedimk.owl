@@ -1,0 +1,1602 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:gr="http://purl.org/goodrelations/v1#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://purl.org/net/esm-owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.0="http://xmlns.com/foaf/0.1/"
+    xmlns:eco="http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://purl.org/net/esm-owl"/>
+  <rdf:Description rdf:about="http://purlorg/goodrelations/v1#Tehnomarket">
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__LENOVO_V110_I3-6100/4GB/WIN10_80TL008SUS">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__LENOVO V110 I3-6100/4GB/WIN10 80TL008SUS</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#LENOVO_V110_I3-6100/4GB/WIN10_80TL008SUS">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>LENOVO V110 I3-6100/4GB/WIN10 80TL008SUS</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_LENOVO_">
+                <gr:name> LENOVO </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1489526957n_1.jpg</j.0:depiction>
+            <gr:description>ПРОЦЕСОР: INTEL CORE I3-6100U 2.30 GHZ
+МЕМОРИJА: 4 GB DDR4
+ХДД: 500 GB SATA
+ЕКРАН: 15.6" HD LED (1366 X 768)
+МРЕЖА: WLAN 802.11 BGN / LAN 10/100
+ГРАФИКА: INTEL HD GRAPHICS 520
+МУЛТИМЕДИА: WEBCAM, CARDREADER,2XUSB, HDMI
+БАТЕРИJА: LI-ION
+ОПЕРАТИВЕН СИСТЕМ: WINDOWS 10 PRO
+Гаранција: 12 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Преносни компјутери</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#239990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>23999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9152537/lenovo-v110-i3-61004gbwin10-80tl008sus</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__GORENJE_NRK-6191TW">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__GORENJE NRK-6191TW</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#GORENJE_NRK-6191TW">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>GORENJE NRK-6191TW</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_SAMSUNG_">
+                <gr:name> SAMSUNG </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/09135805_name.jpg</j.0:depiction>
+            <gr:description>КОМБИНИРАН ФРИЖИДЕР
+ЕНЕРГЕТСКА КЛАСА A+
+КАПАЦИТЕТ НА ОДРЖУВАЊТЕ 222
+КАПАЦИТЕТ НА ЗАМРЗНУВАЊТЕ 5
+ЕЛЕКТРОНСКА КОМАНДА
+БУЧАВОСТ 42 DB
+КАПАЦИТЕТ НА МРЗНЕЊТЕ 5 KG/24H
+3 ФИОКИ ВО ЗАМРЗНУВАЧ
+БОJА INOX
+ДИМЕНЗИИ В/Ш/Д - 185/60/60 SM
+Гаранција: 60 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Фрижидери</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#302990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>30299.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9135805/gorenje-nrk-6191tw</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__HP_250_G4_T6N61EA">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__HP 250 G4 T6N61EA</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#HP_250_G4_T6N61EA">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>HP 250 G4 T6N61EA</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_HP_">
+                <gr:name> HP </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1482925768n_1.jpg</j.0:depiction>
+            <gr:description>ПРОЦЕСОР: INTEL CORE I3-5005U 2.00 GHZ
+МЕМОРИJА: 4 GB DDR3
+ХДД: 500 GB SATA
+ЕКРАН: 15.6" HD LED (1366 X 768)
+МРЕЖА: WLAN 802.11 BGN / LAN 10/100
+ГРАФИКА: RADEON R5 M330 2 GB DDR3
+ОПТИЧКИ УРЕД: DVD-RW SUPER MULTI DUAL LAYER
+МУЛТИМЕДИА: WEBCAM, CARDREADER,USB 3.0, HDMI
+БАТЕРИJА: LI-ION
+ОПЕРАТИВЕН СИСТЕМ: DOS
+Гаранција: 12 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Преносни компјутери</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#184990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>18499.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9151317/hp-250-g4-t6n61ea</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__ZANUSSI_ZRT-23100WA">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__ZANUSSI ZRT-23100WA</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#ZANUSSI_ZRT-23100WA">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>ZANUSSI ZRT-23100WA</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_ZANUSSI_">
+                <gr:name> ZANUSSI </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/09129444_name.jpg</j.0:depiction>
+            <gr:description>КОМБИНИРАН ФРИЖИДЕР
+ЕНЕРГЕТСКА КЛАСА А+
+КАПАЦИТЕТ НА ОДРЖАВАЊТЕ 184Л
+КАПАЦИТЕТ НА ЗАМРЗНУВАЊТЕ 44Л
+НИВО НА БУЧАВОСТ 40DB
+СТАКЛЕНИ ПОЛИЦИ
+ДИМЕНЗИИ В/Ш/Д 140/55/60
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Фрижидери</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#159990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>15999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9129444/zanussi-zrt-23100wa</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__WHIRLPOOL_BLF-8001_OX">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__WHIRLPOOL BLF-8001 OX</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#WHIRLPOOL_BLF-8001_OX">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>WHIRLPOOL BLF-8001 OX</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_WHIRLPOOL_">
+                <gr:name> WHIRLPOOL </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1483012579n_1.jpg</j.0:depiction>
+            <gr:description>ФРИЖИДЕР
+КОМБИНИРАН СО ДОЛНА КОМОРА
+ЕНЕРГЕТСКА КЛАСА A+
+КАПАЦИТЕТ НА ОДРЖУВАЊТЕ 228 L.
+КАПАЦИТЕТ НА ЗАМРЗНУВАЊТЕ 111 L.
+КАПАЦИТЕТ НА ЗАМРЗНУВАЊТЕ 5KG/24H.
+НИВО НА БУЧАВОСТ 39 DB.
+МЕХАНИЧКА КОНТРОЛА
+РАЧНО ОДМРЗНУВАЊТЕ
+4 СТАКЛЕНИ ПОЛИЦИ
+3 ФИОКИ ВО ЗАМРЗНУВАЧ
+ДИМЕНЗИИ В/Ш/Д - 189/60/65 CM.
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Фрижидери</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#199990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>19999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9151969/whirlpool-blf-8001-ox</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__TOSHIBA_SATELLITE_L50-B-2GG">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__TOSHIBA SATELLITE L50-B-2GG</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#TOSHIBA_SATELLITE_L50-B-2GG">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>TOSHIBA SATELLITE L50-B-2GG</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_TOSHIBA_">
+                <gr:name> TOSHIBA </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/09143100_name.jpg</j.0:depiction>
+            <gr:description>ПРОЦЕСОР: INTEL┬о PENTIUM┬о QUAD CORE N3540, 2.16GHZ
+МЕМОРИJА: 4 GB DDR3 1600 MHZ
+ХДД: 1000 GB SATA
+ЕКРАН: 15.6" TRUBRITE HD LED (1366 X 768)
+МРЕЖА: WLAN 802.11 BGN / LAN 10/100
+ГРАФИКА: INTEL HD GRAPHICS
+МУЛТИМЕДИА: HD WEBCAM, BT 4.0 ,USB 3.0, HDMI
+БАТЕРИJА: LI-ION 6H I 55MIN (MOBILE MARKтДв 2012)
+ОПЕРАТИВЕН СИСТЕМ: FREE DOS
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Преносни компјутери</gr:category>
+        <gr:hasPriceSpecification rdf:resource="http://purlnet/net/esm-owl#199990__MKD"/>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9143100/toshiba-satellite-l50-b-2gg</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__SONY_KD-65XD8577SAEP">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__SONY KD-65XD8577SAEP</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#SONY_KD-65XD8577SAEP">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>SONY KD-65XD8577SAEP</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_SONY_PICTURES_">
+                <gr:name> SONY PICTURES </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/09150161_name.jpg</j.0:depiction>
+            <gr:description>65"(164 СМ)4K- HDR ANDROID ТЕЛЕВИЗОР
+4K ULTRA HD РЕЗОЛУЦИJА (3840 Х 2160P)
+MOTIONFLOW XR 1000 HZ
+4K X-1-ПРОЦЕСОР
+ПРОЦЕСОР-X-REALITYтДв PRO
+ANDROID ОПЕРАТИВЕН СИСТЕМ 5,1
+WI-FI ВГРАДЕН
+TRILUMINOSтДв ЕКРАН
+24P TRUE CINEMAтДв
+ADVANCED CONTRAST ENHANCER (ACE)
+ТJУНЕР:DVB-C / DVB-T/T2 / DVB-S/S2
+S-MASTER/DOLBY DIGITAL PLUS/DOLBY┬о 2 X 10 W
+X4HDMI,3XUSB,SCART,COMPONENT,AV,OPTICAL,LAN
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>LED Телевизори</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#1349990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>134999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9150161/sony-kd-65xd8577saep</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__SAMSUNG_UE-65MU6402_SMART_LED_TV">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__SAMSUNG UE-65MU6402 SMART LED TV</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#SAMSUNG_UE-65MU6402_SMART_LED_TV">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>SAMSUNG UE-65MU6402 SMART LED TV</gr:name>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#_SAMSUNG_"/>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1506888391n_1.jpg</j.0:depiction>
+            <gr:description>65" (164 СМ) 4K ULTRA HD SMART LED TV
+РЕЗОЛУЦИJА:3840X2160
+1500HZ PQI PICTURE QUALITY INDEX
+HDR (HIGH DYNAMIC RANGE)
+MEGA CONTRAST ,UHD DIMMIMG
+UHD UP-SCALING
+ПРОЦЕСОР: QUAD CORE
+WEB BROWSER
+АУДИО: 20W RMS, DOLBY DIGITAL, DTS
+ВГРАДЕН WIRELESS LAN, WIFI DIRECT
+ПОВРЗУВАЊТЕ СО МОБИЛЕМН - MIRRORING, DLNA
+3 X HDMI, 2 X USB, LAN, CI+ SLOT
+DVB-T2/C/S2,
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>LED Телевизори</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#1099990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>109999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9153488/samsung-ue-65mu6402-smart-led-tv</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__PHILIPS_49PUS6401/12">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__PHILIPS 49PUS6401/12</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#PHILIPS_49PUS6401/12">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>PHILIPS 49PUS6401/12</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_PHILIPS_">
+                <gr:name> PHILIPS </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/09149813_name.jpg</j.0:depiction>
+            <gr:description>49"(123CM)4K ULTRA HD SMART LED TV
+РЕЗОЛУЦИJА:3840X2160
+1000HZ PICTURE PERFORMANCE INDEX
+ANDROID TV
+QUAD CORE ПРОЦЕСОР
+AMBILIGHT 2
+PIXEL PLUS ULTRA HD ENGINE
+DTS PREMIUM SOUND,CLEAR SOUND,SMART SOUND
+КОНЕКЦИJА 4XHDMI PORTS,3XUSB
+ТJУНЕР DVB-T/C/S2
+ВГРАДЕН WI-FI
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>LED Телевизори</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#419990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>41999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9149813/philips-49pus640112</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+
+
+<gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__PHILIPS_49PUS6401/12">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__PHILIPS 49PUS6401/12</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#PHILIPS_49PUS6401/12">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>PHILIPS 49PUS6401/12</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_PHILIPS_">
+                <gr:name> PHILIPS </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/09149813_name.jpg</j.0:depiction>
+            <gr:description>49"(123CM)4K ULTRA HD SMART LED TV
+РЕЗОЛУЦИJА:3840X2160
+1000HZ PICTURE PERFORMANCE INDEX
+ANDROID TV
+QUAD CORE ПРОЦЕСОР
+AMBILIGHT 2
+PIXEL PLUS ULTRA HD ENGINE
+DTS PREMIUM SOUND,CLEAR SOUND,SMART SOUND
+КОНЕКЦИJА 4XHDMI PORTS,3XUSB
+ТJУНЕР DVB-T/C/S2
+ВГРАДЕН WI-FI
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>LED Телевизори</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#419990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>41998.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9149813/philips-49pus640112</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+
+
+
+
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Neptun__PHILIPS_49PUS6401/12">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__PHILIPS 49PUS6401/12</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#PHILIPS_49PUS6401/12">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>PHILIPS 49PUS6401/12</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_PHILIPS_">
+                <gr:name> PHILIPS </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/09149813_name.jpg</j.0:depiction>
+            <gr:description>49"(123CM)4K ULTRA HD SMART LED TV
+РЕЗОЛУЦИJА:3840X2160
+1000HZ PICTURE PERFORMANCE INDEX
+ANDROID TV
+QUAD CORE ПРОЦЕСОР
+AMBILIGHT 2
+PIXEL PLUS ULTRA HD ENGINE
+DTS PREMIUM SOUND,CLEAR SOUND,SMART SOUND
+КОНЕКЦИJА 4XHDMI PORTS,3XUSB
+ТJУНЕР DVB-T/C/S2
+ВГРАДЕН WI-FI
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>LED Телевизори</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#419990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>41997.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9149813/philips-49pus640112</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+
+    
+
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__GORENJE_NRK-6191CW">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__GORENJE NRK-6191CW</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#GORENJE_NRK-6191CW">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>GORENJE NRK-6191CW</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_GORENJE_">
+                <gr:name> GORENJE </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/09130401_name.jpg</j.0:depiction>
+            <gr:description>КОМБИНИРАН ФРИЖИДЕР
+ЕНЕРГЕТСКА КЛАСА A+
+КАПАЦИТЕТ НА ОДРЖУВАЊТЕ 222
+КАПАЦИТЕТ НА ЗАМРЗНУВАЊТЕ 5
+ЕЛЕКТРОНСКА КОМАНДА
+БУЧАВОСТ 42 DB
+КАПАЦИТЕТ НА МРЗНЕЊТЕ 5 KG/24H
+3 ФИОКИ ВО ЗАМРЗНУВАЧ
+БОJА INOX
+ДИМЕНЗИИ В/Ш/Д - 185/60/60 SM
+Гаранција: 60 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Фрижидери</gr:category>
+        <gr:hasPriceSpecification rdf:resource="http://purlnet/net/esm-owl#239990__MKD"/>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9130401/gorenje-nrk-6191cw</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__XIAOMI_REDMI_NOTE_4X_3GB/32GB">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__XIAOMI REDMI NOTE 4X 3GB/32GB…</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#XIAOMI_REDMI_NOTE_4X_3GB/32GB">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>XIAOMI REDMI NOTE 4X 3GB/32GB…</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_DRUGI_PROIZVODITELI_">
+                <gr:name> DRUGI PROIZVODITELI </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1506548768n_1.jpg</j.0:depiction>
+            <gr:description>ДИСПЛЕJ: 5.5" IPS TOUCH SCREEN 1080X1920
+(~401 PPI PIXEL DENSITY)
+ПРОЦЕСОР: OCTA-CORE 2.0 GHZ CORTEX-A53
+GPU: ADRENO 506
+32 GB ВНАРЕШНА МЕМОРИJА, 3 GB RAM
+СЛОТ ЗА КАРТИЦА ДО 256GB MICRO SD
+КАМЕРА: 13 МP ЗАДНА, 5 MP ПРЕДНА, AUTOFOCUS, LED FLASH
+ОПЕРАТИВЕН СИСТЕМ АНДРОИД, V6.0 MARSHMALLOW
+МРЕЖА: 4G LTE
+WI-FI 802.11 B/G/N, HOTSPOT,
+SENSORS: FINGERPRINT, PROXIMITY, GYROSCOPE, COMPASS,
+A-GPS, GLONASS, BDS, BLUETOOTH
+СИМ КАРТИЧКА DUAL SIM
+БАТЕРИJА: LI-ION 4100
+Гаранција: 12 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Мобилни телефони</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#119990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>11999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9153475/xiaomi-redmi-note-4x-3gb32gb-lte-black</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__SAMSUNG_GALAXY_GRAND_PRIME_G532F">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__SAMSUNG GALAXY GRAND PRIME+ G532F…</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#SAMSUNG_GALAXY_GRAND_PRIME_G532F">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>SAMSUNG GALAXY GRAND PRIME+ G532F…</gr:name>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#_SAMSUNG_"/>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1506549105n_1.jpg</j.0:depiction>
+            <gr:description>ДИСПЛЕJ: 5" TOUCH SCREEN 540 X 960
+ПРОЦЕСОР: QUAD-CORE 1.4 GHZ CORTEX-A53
+GPU: MALI-T720MP2
+8 GB ВНАРЕШНА МЕМОРИJА, 1,5 GB RAM
+СЛОТ ЗА КАРТИЦА ДО 256GB MICRO SD
+КАМЕРА: 8 МP ЗАДНА, 5 MP ПРЕДНА, AUTOFOCUS, LED FLASH
+ОПЕРАТИВЕН СИСТЕМ ANDROID 5.1 (LOLLIPOP)
+МРЕЖА: 4G LTE
+WI-FI 802.11 B/G/N, HOTSPOT,
+SENSORS: ACCELEROMETER, PROXIMITY
+A-GPS, GLONASS, BLUETOOTH, ФМ РАДИО
+СИМ КАРТИЧКА DUAL SIM
+БАТЕРИJА: LI-ION 2600 MAH
+Гаранција: 12 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Мобилни телефони</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#79990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>7999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9153377/samsung-galaxy-grand-prime-g532f-black</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__HP_250_G5_I3-5005/4GB/500GB/15,6_W4N03EA">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__HP 250 G5 I3-5005/4GB/500GB/15,6 W4N03EA</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#HP_250_G5_I3-5005/4GB/500GB/15,6_W4N03EA">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>HP 250 G5 I3-5005/4GB/500GB/15,6 W4N03EA</gr:name>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#_HP_"/>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1497367361n_1.jpg</j.0:depiction>
+            <gr:description>ПРОЦЕСОР: INTEL CORE I3-5005U 2.00 GHZ
+МЕМОРИJА: 4 GB DDR3L-1600 SDRAM (1 X 4 GB)
+ХДД: 500 GB SATA
+ЕКРАН: 15.6" HD LED (1366 X 768)
+МРЕЖА: WLAN 802.11 BGN / LAN 10/100/1000 GBE
+ГРАФИКА: INTEL HD GRAPHICS
+МУЛТИМЕДИА: WEBCAM, CARDREADER,USB 3.0, HDMI
+БАТЕРИJА: LI-ION
+ОПЕРАТИВЕН СИСТЕМ: DOS
+Гаранција: 12 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Преносни компјутери</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#164990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>16499.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9152950/hp-250-g5-i3-50054gb500gb156-w4n03ea</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__LENOVO_IDEAPAD_110_80UD00QQRI_I3-6100/4G">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__LENOVO IDEAPAD 110 80UD00QQRI I3-6100/4G</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#LENOVO_IDEAPAD_110_80UD00QQRI_I3-6100/4G">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>LENOVO IDEAPAD 110 80UD00QQRI I3-6100/4G</gr:name>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#_LENOVO_"/>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1491385400n_1.jpg</j.0:depiction>
+            <gr:description>ПРОЦЕСОР: INTEL CORE I3-6100U 2.30 GHZ
+МЕМОРИJА: 4 GB DDR4
+ХДД: 1TB GB SATA
+ЕКРАН: 15.6" HD LED (1366 X 768)
+МРЕЖА: WLAN 802.11 BGN / LAN 10/100
+ГРАФИКА: AMD R16M-M1-30 DDR3L 2GB
+ОПТИЧКИ УРЕД: DVD-RW SUPER MULTI DUAL LAYER
+МУЛТИМЕДИА: WEBCAM, CARDREADER,2XUSB, HDMI
+БАТЕРИJА: LI-ION
+ОПЕРАТИВЕН СИСТЕМ: DOS
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Преносни компјутери</gr:category>
+        <gr:hasPriceSpecification rdf:resource="http://purlnet/net/esm-owl#199990__MKD"/>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9152612/lenovo-ideapad-110-80ud00qqri-i3-61004g</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__SAMSUNG_UE40K5582A_FHD_SMART_LED">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__SAMSUNG UE40K5582A FHD SMART LED…</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#SAMSUNG_UE40K5582A_FHD_SMART_LED">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>SAMSUNG UE40K5582A FHD SMART LED…</gr:name>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#_SAMSUNG_"/>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1496070401n_1.jpg</j.0:depiction>
+            <gr:description>40" 102CM LED DISPLAY
+РЕЗОЛУЦИJА 1920Х1080
+ИНТЕРПОЛАЦИJА 400PQI (PICTURE QUALITY INDEX)
+TIZEN SMART HUB
+PROCESSOR QUAD CORE
+WI-FI 802.11N, BLUETOOTH, WI-FI DIRECT, ETHERNET-LAN RJ-45
+ИЗЛЕЗНА МОЌНОСТ НА ЗВУЧНИЦИ: 2X10W
+DOLBY DIGITAL, DTS,
+КОНЕКЦИJА: 3XHDMI, 2XUSB 2.0,CI+1.3
+ТJУНЕР : DVB/T2/S2/C
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>LED Телевизори</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#304990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>30499.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9152833/samsung-ue40k5582a-fhd-smart-led-tv-whit</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__SMARTTECH_LE-32D11_32_HD_LED">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__SMARTTECH LE-32D11 32" HD LED</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#SMARTTECH_LE-32D11_32_HD_LED">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>SMARTTECH LE-32D11 32" HD LED</gr:name>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#_DRUGI_PROIZVODITELI_"/>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1498550535n_1.jpg</j.0:depiction>
+            <gr:description>32' (81CM) LED ТЕЛЕВИЗОР
+HD РЕЗОЛУЦИJА- 1366Х768Р
+USB МЕДИА ПЛЕЕР (СЛИКИ,МУЗИКА,ВИДЕО)
+PVR - СНИМАЊТТЕ НА USB HDD,ОД DVB
+DVB T/C MPEG4
+ТIMER/SLEEP TIMER
+HDMI;USB;SCART;VGA
+Гаранција: 12 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>LED Телевизори</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#104990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>10499.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9153108/smarttech-le-32d11-32-hd-led</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__PANASONIC_TX-L55ET5E">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__PANASONIC TX-L55ET5E</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#PANASONIC_TX-L55ET5E">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>PANASONIC TX-L55ET5E</gr:name>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#_PANASONIC_">
+                <gr:name> PANASONIC </gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/09122066_name.jpg</j.0:depiction>
+            <gr:description>55' (139 CM) LED LCD TB
+3D FULL-HD 1920 X 1080 P
+4 X 3D ОЧИЛА ВО КОМПЛЕТ
+2D - 3D KОНВЕРЗИJА
+300HZ BACKLIGHT SCANNING TECHNOLOGY
+DVB T/C MPEG 4
+V-AUDIO SURROUND
+SD/USB МЕДИА ПЛЕЕР : DIVXPLUSHD/WMV/MKV/AVI/MP4/MOV, MP3/AAC/WMA PRO/FLAC, JPEG/MPO
+USB PVR RECORDING
+VIERA CONNECT
+WIFI (WEB BROWSER),DLNA
+4XHDMI,3XUSB,COMPONENT,COMPOSITE,SCART,PC,OPTICAL OUT
+УНИКАТЕН "SLIM" ДИЗАJН
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>LED Телевизори</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#506990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>50699.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9122066/panasonic-tx-l55et5e</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__HP_250_G5_I3-5005/4GB/500GB/FHD_W4M34EA">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__HP 250 G5 I3-5005/4GB/500GB/FHD W4M34EA</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#HP_250_G5_I3-5005/4GB/500GB/FHD_W4M34EA">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>HP 250 G5 I3-5005/4GB/500GB/FHD W4M34EA</gr:name>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#_HP_"/>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1484149464n_1.jpg</j.0:depiction>
+            <gr:description>ПРОЦЕСОР: INTEL CORE I3-5005U 2.00 GHZ
+МЕМОРИJА: 4 GB DDR3
+ХДД: 500 GB SATA
+ЕКРАН: 15.6" FULL HD LED (1920 X 1080)
+МРЕЖА: WLAN 802.11 BGN / LAN 10/100/1000
+BLUETOOTH V4.2 &amp; WI-DI
+ГРАФИКА: RADEON R5 M430 2 GB DDR3
+ОПТИЧКИ УРЕД: DVD-RW SUPER MULTI DUAL LAYER
+МУЛТИМЕДИА: WEBCAM, CARDREADER,USB 3.0, HDMI
+БАТЕРИJА: LI-ION
+ОПЕРАТИВЕН СИСТЕМ: DOS
+Гаранција: 12 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Преносни компјутери</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#209990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>20999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9152322/hp-250-g5-i3-50054gb500gbfhd-w4m34ea</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__SAMSUNG_UE-50MU6102_SMART_LED_TV">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__SAMSUNG UE-50MU6102 SMART LED TV</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#SAMSUNG_UE-50MU6102_SMART_LED_TV">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>SAMSUNG UE-50MU6102 SMART LED TV</gr:name>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#_SAMSUNG_"/>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1506888171n_1.jpg</j.0:depiction>
+            <gr:description>50"(126CM)4K ULTRA HD SMART LED TV
+РЕЗОЛУЦИJА:3840X2160
+1300HZ PQI PICTURE QUALITY INDEX
+HDR (HIGH DYNAMIC RANGE)
+MEGA CONTRAST ,UHD DIMMIMG
+UHD UP-SCALING
+ПРОЦЕСОР: QUAD CORE
+АУДИО: 20W RMS, DOLBY DIGITAL, DTS
+ВГРАДЕН WIRELESS LAN, WIFI DIRECT
+ПОВРЗУВАЊТЕ СО МОБИЛЕМН - MIRRORING, DLNA
+3 X HDMI, 2 X USB, LAN, CI+ SLOT
+DVB-T2/C,
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>LED Телевизори</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#429990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>42999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9153485/samsung-ue-50mu6102-smart-led-tv</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__WHIRLPOOL_B_TNF-5011_OX">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__WHIRLPOOL B TNF-5011 OX</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#WHIRLPOOL_B_TNF-5011_OX">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>WHIRLPOOL B TNF-5011 OX</gr:name>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#_WHIRLPOOL_"/>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1504532820n_1.jpg</j.0:depiction>
+            <gr:description>КОМБИНИРАН ЛАДИЛНИК WHIRLPOOL B TNF 5011 OX
+ШИРИНА 70 CM
+ТЕХНОЛОГИJА 6TH SENSE TOTAL NOFROST SUPREME
+LED ОСВЕТЛУВАЊТЕ
+ЕНЕРГЕТСКА КЛАСА A
+КОНТРОЛА НА ВЛАГА MULTIFLOW ACTIV
+ВКУПЕН КАПАЦИТЕТ 450 L
+ФРИЖИДЕР 302 L
+АЛАРМ ЗА ОТВОРЕНИ ВРАТИ ВО ФРИЖИДЕР
+3 ПОЛИЦИ ЗА СТАКЛО
+ЗАМРЗНУВАЧ 148
+БОJА INOX
+ДИМЕНЗИИ (ВXШXД) 195X70X75,5 CM
+Гаранција: 24 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Фрижидери</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#399990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>39999.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9153347/whirlpool-b-tnf-5011-ox</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Tehnomarket__DOOGEE_X6_DUAL_SIM_WHITE">
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+        <gr:name>Tehnomarket__DOOGEE X6 DUAL SIM WHITE</gr:name>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#DOOGEE_X6_DUAL_SIM_WHITE">
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+            <gr:name>DOOGEE X6 DUAL SIM WHITE</gr:name>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#_DRUGI_PROIZVODITELI_"/>
+            <j.0:depiction>http://tehnomarket.com.mk/img/products/full/1483310869n_1.jpg</j.0:depiction>
+            <gr:description>ДИСПЛЕJ: 5.5" IPS LCD TOUCH SCREEN 1280 X 720
+ПРОЦЕСОР: QUAD-CORE 1.3GHZ ARM CORTEX A53
+8 GB ВНАРЕШНА МЕМОРИJА, 1 GB RAM
+СЛОТ ЗА КАРТИЦА ДО 32GB MICRO SD
+КАМЕРА: 5 МP ЗАДНА, 2 MP ПРЕДНА,
+AUTOFOCUS, LED FLASH
+ОПЕРАТИВЕН СИСТЕМ АНДРОИД, V5.1 МРЕЖА: 4G
+WI-FI 802.11 B/G/N, HOTSPOT
+SENSORS: PROXIMITY, A-GPS,
+FM RADIO
+СИМ КАРТИЧКА DUAL SIM
+БАТЕРИJА: LI-ION 3000
+Гаранција: 12 месеци 
+</gr:description>
+          </rdf:Description>
+        </gr:includes>
+        <gr:category>Мобилни телефони</gr:category>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#47990__MKD">
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <gr:hasCurrencyValue>4799.0</gr:hasCurrencyValue>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <j.0:depiction>http://tehnomarket.com.mk/product/9151398/doogee-x6-dual-sim-white</j.0:depiction>
+      </rdf:Description>
+    </gr:offers>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purlorg/goodrelations/v1#Setec">
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Philips_HD2392/00">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=69110</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#22990__MKD">
+            <gr:hasCurrencyValue>2299.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Philips_HD2392/00">
+            <gr:description>Philips HD2392/00
+Тостер сендвич
+Боја бела
+820W
+ладна рачка
+On/off копче
+брзо загревање
+гумирани ногарки</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/69110-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#Philips">
+                <gr:name>Philips</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>Philips HD2392/00</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Philips HD2392/00</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__BOMANN_TA_246_CB_WHITE">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=67983</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#9490__MKD">
+            <gr:hasCurrencyValue>949.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#BOMANN_TA_246_CB_WHITE">
+            <gr:description>BOMANN TA 246 CB WHITE
+Тостер за топли лепчиња
+Бела боја
+за 2 лепчиња
+метални држачи за лепчиња
+функција за одмрзнување
+ладно куќиште
+фиока за трошки
+700W</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/67983-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#BOMANN">
+                <gr:name>BOMANN</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>BOMANN TA 246 CB WHITE</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__BOMANN TA 246 CB WHITE</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Gorenje_T_930_BK">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=65449</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#19500__MKD">
+            <gr:hasCurrencyValue>1950.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Gorenje_T_930_BK">
+            <gr:description>Gorenje T 930 BK
+Тостер за лепчиња
+Црно -Бела боја
+Моќност 930W
+Функција на одмрзнување
+функција на загревање
+Број на степени на загревање 6
+Термостат
+Големина на комора XL
+Ладни страници</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/65449-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#Gorenje">
+                <gr:name>Gorenje</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>Gorenje T 930 BK</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Gorenje T 930 BK</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Telefunken_TLF_SM-700_Maxi_grill_Toaster">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=64264</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#24990__MKD">
+            <gr:hasCurrencyValue>2499.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Telefunken_TLF_SM-700_Maxi_grill_Toaster">
+            <gr:description>Telefunken TLF SM-700 Maxi grill Toaster
+Inox
+Thermostat
+Non stick teflon grills
+Locking latch
+1600W</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/64264-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#Sinbo">
+                <gr:name>Sinbo</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>Telefunken TLF SM-700 Maxi grill Toaster</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Telefunken TLF SM-700 Maxi grill Toaster</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__BOMANN_KG_2284_CB">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=67982</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#27990__MKD">
+            <gr:hasCurrencyValue>2799.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#BOMANN_KG_2284_CB">
+            <gr:description>BOMANN KG 2284 CB
+Голем Грил тостер со керамичко обложување
+Инокс
+за готвење без маснотии
+можност за правење скара
+180 степени отворање на капакот
+Одвод за маснотии
+Термостат
+2000W
+Отпорен на гребаници
+Термо изолирана рачка
+Заштита од прегревање</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/67982-400x350.jpg</j.0:depiction>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#BOMANN"/>
+            <gr:name>BOMANN KG 2284 CB</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__BOMANN KG 2284 CB</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Gorenje_T_930_W">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=65448</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#19990__MKD">
+            <gr:hasCurrencyValue>1999.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Gorenje_T_930_W">
+            <gr:description>Gorenje T 930 W
+Тостер за лепчиња
+Бела боја
+Моќност 930W
+Функција на одмрзнување
+функција на загревање
+Број на степени на загревање 6
+Термостат
+Големина на комора XL
+Ладни страници</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/65448-400x350.jpg</j.0:depiction>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#Gorenje"/>
+            <gr:name>Gorenje T 930 W</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Gorenje T 930 W</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Samsung_Galaxy_Note_8_NEW_2017">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10066_10067&amp;product_id=45523</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#669990__MKD">
+            <gr:hasCurrencyValue>66999.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Мобилни Телефони</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Samsung_Galaxy_Note_8_NEW_2017">
+            <gr:description>Samsung Galaxy Note 8 NEW 2017
+Black
+6.3 inches Super AMOLED capacitive touchscreen
+16M colors
+Resolution: 1440 x 2960 pixels
+Corning Gorilla Glass 5.3D
+Chipset: Exynos 8895 Octa
+CPU: Octa-core (4x2.3 GHz &amp; 4x1.7 GHz)
+GPU: Mali-G71 MP20
+Internal Memory: 64 GB microSD
+up to 256 GB
+RAM: 6 GB RAM
+Primary Camera: 12 MP
+f/1.7
+26mm
+phase detection autofocus
+OIS
+LED flash
+Secondary Camera: 8 MP
+f/1.7
+autofocus
+1440p@30fps
+dual video call
+Auto HDR
+OS: Android OS
+v7.1
+Wi-Fi 802.11 a/b/g/n/ac
+dual-band
+Wi-Fi Direct
+hotspot
+Bluetooth: v5.0
+A2DP
+LE
+aptX
+GPS
+NFC
+Sensors: Iris scanner
+fingerprint (rear-mounted)
+accelerometer
+gyro
+proximity
+compass
+barometer
+heart rate
+SpO2
+Dimensions: 162.50 x 74.80 x 8.6 mm
+Weight: 195 gr
+Battery: Non-removable Li-Ion 3300 mAh battery
+P/N SM-N950FZKDSEE</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/45523-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#Samsung">
+                <gr:name>Samsung</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>Samsung Galaxy Note 8 NEW 2017</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Samsung Galaxy Note 8 NEW 2017</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__ST_TTL-T100BI_Superior_Technology">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=43895</j.0:depiction>
+        <gr:hasPriceSpecification rdf:resource="http://purlnet/net/esm-owl#9490__MKD"/>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#ST_TTL-T100BI_Superior_Technology">
+            <gr:description>ST TTL-T100BI
+Superior Technology
+Тостер за топли лепчиња
+Инокс/црн
+750W
+Фиока за трошки
+Електронска контрола на печењето
+Заштита од прегревање</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/43895-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#ST">
+                <gr:name>ST</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>ST TTL-T100BI Superior Technology</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__ST TTL-T100BI Superior Technology</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Gorenje_T_900_E">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=69919</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#21990__MKD">
+            <gr:hasCurrencyValue>2199.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Gorenje_T_900_E">
+            <gr:description>Gorenje T 900 E
+Тостер за лепчиња
+Сиво-Црна боја
+Моќност 870W
+Функција на одмрзнување
+функција на загревање
+Број на степени на загревање 6
+Термостат
+Големина на комора XL
+Копче за исфрлање на лепчето
+Автоматско исфрлање
+High-lift исфрлање на лебчето
+Ниво на запеченост
+Гумирани ногарки</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/69919-400x350.jpg</j.0:depiction>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#Gorenje"/>
+            <gr:name>Gorenje T 900 E</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Gorenje T 900 E</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__SAPIR_1442_Z">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=67171</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#7990__MKD">
+            <gr:hasCurrencyValue>799.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#SAPIR_1442_Z">
+            <gr:description>SAPIR 1442 Z
+Инокс/Црн Грил тостер мал
+нелепливи плочи
+ладно куќиште
+750W</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/67171-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#SAPIR">
+                <gr:name>SAPIR</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>SAPIR 1442 Z</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__SAPIR 1442 Z</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__ST_MTG-800BA">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=69388</j.0:depiction>
+        <gr:hasPriceSpecification rdf:resource="http://purlnet/net/esm-owl#7990__MKD"/>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#ST_MTG-800BA">
+            <gr:description>ST MTG-800BA
+Superior Technology
+Мал Грил тостер
+за 2 тостови одеднаш
+800W
+црна боја
+нелепливи грил плочи
+индикатор за работа во црвена боја
+заклучување на грил плочите</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/69388-400x350.jpg</j.0:depiction>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#ST"/>
+            <gr:name>ST MTG-800BA</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__ST MTG-800BA</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__ST_MTG-800BGA">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=60427</j.0:depiction>
+        <gr:hasPriceSpecification rdf:resource="http://purlnet/net/esm-owl#7990__MKD"/>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#ST_MTG-800BGA">
+            <gr:description>ST MTG-800BGA
+Superior Technology
+Мал Грил тостер
+за 2 тостови одеднаш
+800W
+црна боја
+нелепливи грил плочи
+индикатор за работа во црвена боја
+заклучување на грил плочите</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/no_image-400x350.jpg</j.0:depiction>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#ST"/>
+            <gr:name>ST MTG-800BGA</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__ST MTG-800BGA</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Gorenje_KR_1800_DS_MIDI">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=65428</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#30500__MKD">
+            <gr:hasCurrencyValue>3050.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Gorenje_KR_1800_DS_MIDI">
+            <gr:description>Gorenje KR 1800 DS MIDI
+Тостер
+Црна боја
+Приклучна моќ: 1800 W
+Матерјал на плочата: Алуминиум
+Куќиште: Лакирана површина
+Рачка за носење
+Термостат</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/65428-400x350.jpg</j.0:depiction>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#Gorenje"/>
+            <gr:name>Gorenje KR 1800 DS MIDI</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Gorenje KR 1800 DS MIDI</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__BOSCH_TAT6101">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=64375</j.0:depiction>
+        <gr:hasPriceSpecification rdf:resource="http://purlnet/net/esm-owl#24990__MKD"/>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#BOSCH_TAT6101">
+            <gr:description>BOSCH TAT6101
+Tостер 
+светло сива боја
+private collection серија
+900W,за 2 парчиња тост
+електронско регулирање на степенот на печење
+oтстранлив сад за трошки
+oтстранлива мрежичка за загревање земички од нерѓосувачки челик</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/64375-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#BOSCH">
+                <gr:name>BOSCH</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>BOSCH TAT6101</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__BOSCH TAT6101</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__ST_TTL-T100W_Superior_Technology">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=43894</j.0:depiction>
+        <gr:hasPriceSpecification rdf:resource="http://purlnet/net/esm-owl#7990__MKD"/>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#ST_TTL-T100W_Superior_Technology">
+            <gr:description>ST TTL-T100W
+Superior Technology
+Тостер за топли лепчиња
+Бел
+750W
+Фиока за трошки
+Електронска контрола на печењето
+Заштита од прегревање</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/43894-400x350.jpg</j.0:depiction>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#ST"/>
+            <gr:name>ST TTL-T100W Superior Technology</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__ST TTL-T100W Superior Technology</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Zelmer_ZTS1710W">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=68703</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#15990__MKD">
+            <gr:hasCurrencyValue>1599.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Zelmer_ZTS1710W">
+            <gr:description>Zelmer ZTS1710W
+Тостер за топли лепчиња
+бела боја со уникатни орнаменти
+контрола на печењето 7 степени
+930W
+автоматско исклучување
+фиока за трошки</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/68703-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#ZELMER">
+                <gr:name>ZELMER</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>Zelmer ZTS1710W</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Zelmer ZTS1710W</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Braun_HT450">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=68049</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#20990__MKD">
+            <gr:hasCurrencyValue>2099.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Braun_HT450">
+            <gr:description>Braun HT450
+Тостер за топли лепчиња
+GERMAN TECHNOLOGY
+црна боја
+за 2 лепчиња одеднаш
+фиока за трошки
+термостат за одбирање степени
+автоматско исклучување
+1000W</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/68049-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#Braun">
+                <gr:name>Braun</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>Braun HT450</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Braun HT450</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Kenwood_TTP230">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=68180</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#28990__MKD">
+            <gr:hasCurrencyValue>2899.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Kenwood_TTP230">
+            <gr:description>Kenwood TTP230
+Тостер за топли лепчиња со осветлени контроли
+Бела боја
+за 4 лепчиња одеднаш
+Одбирање нивоа на печење
+фиока за трошки
+термостат за одбирање степени
+автоматско исклучување
+850W</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/68180-400x350.jpg</j.0:depiction>
+            <gr:hasBrand>
+              <rdf:Description rdf:about="http://purlnet/net/esm-owl/brands#KENWOOD">
+                <gr:name>KENWOOD</gr:name>
+              </rdf:Description>
+            </gr:hasBrand>
+            <gr:name>Kenwood TTP230</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Kenwood TTP230</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__BOMANN_TA_1573_CB_BLACK">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=67985</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#9990__MKD">
+            <gr:hasCurrencyValue>999.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#BOMANN_TA_1573_CB_BLACK">
+            <gr:description>BOMANN TA 1573 CB BLACK
+Луксузен Тостер за топли лепчиња
+Бордо црна боја
+за 2 лепчиња
+функција за одмрзнување
+ладно куќиште
+фиока за трошки
+700W</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/67985-400x350.jpg</j.0:depiction>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#BOMANN"/>
+            <gr:name>BOMANN TA 1573 CB BLACK</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__BOMANN TA 1573 CB BLACK</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Gorenje_T_900_W">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=66074</j.0:depiction>
+        <gr:hasPriceSpecification rdf:resource="http://purlnet/net/esm-owl#24990__MKD"/>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Gorenje_T_900_W">
+            <gr:description>Gorenje T 900 W
+Тостер за лепчиња
+Бела боја
+Моќност 870W
+Функција на одмрзнување
+функција на загревање
+Број на степени на загревање 6
+Термостат
+Големина на комора XL
+Копче за исфрлање на лепчето
+Автоматско исфрлање
+High-lift исфрлање на лебчето
+Ниво на запеченост
+Гумирани ногарки</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/66074-400x350.jpg</j.0:depiction>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#Gorenje"/>
+            <gr:name>Gorenje T 900 W</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Gorenje T 900 W</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+    <gr:offers>
+      <rdf:Description rdf:about="http://purlnet/net/esm-owl#Setec__Philips_HD2395/00">
+        <j.0:depiction>http://setec.mk/index.php?route=product%2Fproduct&amp;path=10124_10125_10126&amp;product_id=69111</j.0:depiction>
+        <gr:hasPriceSpecification>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#25990__MKD">
+            <gr:hasCurrencyValue>2599.0</gr:hasCurrencyValue>
+            <gr:hasCurrency>MKD</gr:hasCurrency>
+            <rdf:type>http://purl.org/goodrelations/v1#UnitPriceSpecification</rdf:type>
+          </rdf:Description>
+        </gr:hasPriceSpecification>
+        <gr:category>Тостери</gr:category>
+        <gr:includes>
+          <rdf:Description rdf:about="http://purlnet/net/esm-owl#Philips_HD2395/00">
+            <gr:description>Philips HD2395/00
+Тостер
+Боја бела
+820W
+ладна рачка
+On/off копче
+брзо загревање
+гумирани ногарки</gr:description>
+            <j.0:depiction>http://setec.mk/image/cache/data/Product/69111-400x350.jpg</j.0:depiction>
+            <gr:hasBrand rdf:resource="http://purlnet/net/esm-owl/brands#Philips"/>
+            <gr:name>Philips HD2395/00</gr:name>
+            <rdf:type>http://purl.org/goodrelations/v1#ProductOrServiceModel</rdf:type>
+          </rdf:Description>
+        </gr:includes>
+        <gr:name>Setec__Philips HD2395/00</gr:name>
+        <rdf:type>http://purl.org/goodrelations/v1#Offering</rdf:type>
+      </rdf:Description>
+    </gr:offers>
+  </rdf:Description>
+</rdf:RDF>
