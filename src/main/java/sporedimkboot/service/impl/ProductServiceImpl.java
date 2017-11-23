@@ -72,8 +72,6 @@ public class ProductServiceImpl implements ProductService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        categoriesModel.write(System.out, "TURTLE");
     }
 
     @Override
