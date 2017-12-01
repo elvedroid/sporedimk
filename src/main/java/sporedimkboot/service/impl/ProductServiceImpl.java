@@ -26,6 +26,7 @@ public class ProductServiceImpl implements ProductService {
 
     private ProductRepository productRepository;
     private Model storesModel, offersModel, productsModel, categoriesModel, favoritesModel;
+    private Model tmpStoresModel, tmpOffersModel, tmpProductsModel;
     private JenaTemplate jenaTemplate;
     private HashMap categories;
     private String categoriesJson;
@@ -62,7 +63,6 @@ public class ProductServiceImpl implements ProductService {
         productsModel = ModelFactory.createDefaultModel();
         categoriesModel = ModelFactory.createDefaultModel();
         favoritesModel = ModelFactory.createDefaultModel();
-
         try {
             UpdateUtils.setUpLocalModel(storesModel, FILE_STORES);
             UpdateUtils.setUpLocalModel(offersModel, FILE_OFFERS);
@@ -77,21 +77,16 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void addSeller(Seller seller) {
         try {
-            UpdateUtils.setUpLocalModel(storesModel, FILE_STORES_BASE);
-            UpdateUtils.setUpLocalModel(offersModel, FILE_BASE);
-            UpdateUtils.setUpLocalModel(productsModel, FILE_BASE);
+            tmpStoresModel = ModelFactory.createDefaultModel();
+            UpdateUtils.setUpLocalModel(tmpStoresModel, FILE_BASE);
+            tmpOffersModel = ModelFactory.createDefaultModel();
+            UpdateUtils.setUpLocalModel(tmpOffersModel, FILE_BASE);
+            tmpProductsModel = ModelFactory.createDefaultModel();
+            UpdateUtils.setUpLocalModel(tmpProductsModel, FILE_BASE);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        for (Offer o : seller.getOffers()) {
-            UpdateUtils.addOfferingToSeller(storesModel,
-                    seller.getName(),
-                    UpdateUtils.createOfferResource(offersModel, productsModel, o));
-        }
-        UpdateUtils.writeModelToFile(productsModel, FILE_PRODUCTS);
-        UpdateUtils.writeModelToFile(offersModel, FILE_OFFERS);
-        UpdateUtils.writeModelToFile(storesModel, FILE_STORES);
-        System.out.println("Added offers");
+        UpdateUtils.addSeller(tmpStoresModel, seller);
     }
 
     @Override
@@ -119,8 +114,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<Offer> getOffersPerCategory(CatLang category) {
-        return QueryUtils.getOffersPerCategory(offersModel.union(productsModel), category);
+    public List<Offer> getOffersPerCategory(CatLang category, Integer page, Integer perPage) {
+        return QueryUtils.getOffersPerCategory(offersModel.union(productsModel), category, page, perPage);
     }
 
     @Override
@@ -130,12 +125,12 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public String getCategoriesJson() {
-        return categoriesJson.replaceAll("\"","\\\\\"");
+        return categoriesJson.replaceAll("\"", "\\\\\"");
     }
 
     @Override
-    public void addProductToFavorites(Favorites favorites) {
-        UpdateUtils.updateFavorites(favoritesModel, productsModel, favorites);
+    public Boolean addProductToFavorites(Favorites favorites) {
+        return UpdateUtils.updateFavorites(favoritesModel, productsModel, favorites);
     }
 
     @Override
@@ -156,6 +151,26 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public List<Offer> getMostFavoriteProducts() {
         return QueryUtils.getMostFavoriteProducts(offersModel.union(productsModel).union(favoritesModel));
+    }
+
+    @Override
+    public List<Offer> getFilteredOffers(String phrase, String lang, Integer page, Integer per_page) {
+        return QueryUtils.getFilteredOffers(offersModel.union(categoriesModel).union(productsModel), phrase, lang, page, per_page);
+    }
+
+    @Override
+    public void addOffer(String seller, Offer offer) {
+        UpdateUtils.addOfferingToSeller(tmpStoresModel,
+                seller,
+                UpdateUtils.createOfferResource(tmpOffersModel, tmpProductsModel, offer));
+    }
+
+    @Override
+    public void swapModels() {
+        UpdateUtils.writeModelToFile(tmpProductsModel, FILE_PRODUCTS);
+        UpdateUtils.writeModelToFile(tmpOffersModel, FILE_OFFERS);
+        UpdateUtils.writeModelToFile(tmpStoresModel, FILE_STORES);
+        initModels();
     }
 
 }

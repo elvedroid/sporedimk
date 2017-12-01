@@ -1051,7 +1051,7 @@ cat:електрични_бокали a rdfs:Resource;
 cat:бокал_за_вода_со_филтер a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
     gr:name "Бокал за вода со филтер"@en, "Бокал за вода со филтер"@mk ;
-    foaf:made "http://tehnomarket.com.mk/product/9076190/nitek-kana-aqua-select-shark-multimax#5170" .
+    foaf:made "http://tehnomarket.com.mk/img/products/full/09076190_name.jpg" .
 
 cat:електрични_апарати a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;

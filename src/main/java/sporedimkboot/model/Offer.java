@@ -19,6 +19,14 @@ public class Offer {
     public Offer() {
     }
 
+    public Offer(String name, Product product, Category category, Price price, String url) {
+        this.name = name;
+        this.product = product;
+        this.category = category;
+        this.price = price;
+        this.url = url;
+    }
+
     public long getId() {
         return id;
     }

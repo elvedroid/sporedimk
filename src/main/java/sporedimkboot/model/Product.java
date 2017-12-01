@@ -24,6 +24,13 @@ public class Product {
         this.description = description;
     }
 
+    public Product(String name, String brand, String description, String image) {
+        this.name = name;
+        this.brand = brand;
+        this.description = description;
+        this.image = image;
+    }
+
     public long getId() {
         return id;
     }

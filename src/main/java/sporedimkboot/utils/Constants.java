@@ -21,6 +21,8 @@ public class Constants {
     public static final String GRINCLUDES_PROPERTY_URL = "includes";
     public static final String GRHAS_PRICE_SPECS_PROPERTY_URL = "hasPriceSpecification";
     public static final String GRCATEGORY_PROPERTY_URL = "category";
+    public static final String GRSTORE_PROPERTY_URL = "BusinessEntity";
+    public static final String GRLEGAL_NAME_PROPERTY_URL = "legalName";
     public static final String GRHAS_CURRENCY_PROPERTY_URL = "hasCurrency";
     public static final String GRHAS_CURRENCY_VALUE_PROPERTY_URL = "hasCurrencyValue";
     public static final String GROFFERS_PROPERTY_URL = "offers";
@@ -28,7 +30,7 @@ public class Constants {
 
 
     public static final String FILE_ONTOLOGY = System.getProperty("user.dir") + "/tmp/ontology/sporedimk.owl";
-    public static final String FILE_BASE = System.getProperty("user.dir") + "/tmp/ontology/base.ttl";
+    public static final String FILE_BASE = System.getProperty("user.dir") + "/tmp/ontology/prefixes.ttl";
     public static final String FILE_STORES = System.getProperty("user.dir") + "/tmp/ontology/stores.ttl";
     public static final String FILE_STORES_BASE = System.getProperty("user.dir") + "/tmp/ontology/stores_base.ttl";
     public static final String FILE_OFFERS = System.getProperty("user.dir") + "/tmp/ontology/offers.ttl";
@@ -42,5 +44,11 @@ public class Constants {
     public static final String FILTER_CATEGORIES = "([\\\\\\.\\[\\{\\(\\*\\+\\?\\^\\$\\|\\%\\√\\`\\…\\'\\\"\\`‌​])";
 
     public static final String ROOT_CATEGORIES = "root";
+
+    public static final String MKD_UNIT = "MKD";
+
+    //Sellers
+    public static final String SETEC = "SETEC";
+    public static final String SETEC_IMAGE_URL = "http://setec.mk/image/data/Sliki/Setec_Logo_Web.png";
 
 }

@@ -14,10 +14,10 @@ public interface ProductService {
     List<Category> getRootCategories(String lang);
     List<Category> getSubcategories(CatLang fromCategory);
     List<Category> getCategoriesOrSubcategories(String fromCategory);
-    List<Offer> getOffersPerCategory(CatLang category);
+    List<Offer> getOffersPerCategory(CatLang category, Integer page, Integer perPage);
     List<ProductOffers> getOffersWithSameProduct(Product product);
     String getCategoriesJson();
-    void addProductToFavorites(Favorites favorites);
+    Boolean addProductToFavorites(Favorites favorites);
     Boolean isProductFavorite(Favorites favorites);
 
     Product findProductByName(String name);
@@ -25,4 +25,10 @@ public interface ProductService {
     List<Offer> getMyFavoriteProducts(String appId);
 
     List<Offer> getMostFavoriteProducts();
+
+    List<Offer> getFilteredOffers(String phrase, String lang, Integer page, Integer per_page);
+
+    void addOffer(String seller, Offer offer);
+
+    void swapModels();
 }

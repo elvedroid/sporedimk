@@ -105,7 +105,7 @@ public class UpdateUtils {
         Property hasCurrencyValue = model.getProperty(BASE_GR_URL, GRHAS_CURRENCY_VALUE_PROPERTY_URL);
 
         priceResource.addProperty(hasCurrency, price.getUnit());
-        priceResource.addProperty(hasCurrencyValue, String.valueOf(price.getValue()));
+        priceResource.addLiteral(hasCurrencyValue, price.getValue());
 
         return priceResource;
     }
@@ -137,7 +137,7 @@ public class UpdateUtils {
         }
     }
 
-    public static void updateFavorites(Model favoritesModel, Model productModel, Favorites favorites) {
+    public static Boolean updateFavorites(Model favoritesModel, Model productModel, Favorites favorites) {
         Resource favoritesResource = favoritesModel.createResource(FAVORITES_URL + Utils.getUriReplacingChars(favorites.getProductName()));
 
         String query = "PREFIX favs: <http://purl.org/net/esm-owl/favorites#>\n" +
@@ -160,7 +160,7 @@ public class UpdateUtils {
         if (favorites.isFavorite()
                 && productModel.getResource(PRODUCTS_URL + Utils.getUriReplacingChars(favorites.getProductName())) != null) {
             if (resultSet != null && resultSet.hasNext()) {
-                return;
+                return Boolean.FALSE;
             }
             favoritesResource.addProperty(FOAF.phone, favorites.getAppID());
             favoritesResource.addProperty(VCARD.AGENT, productModel.getResource(PRODUCTS_URL + Utils.getUriReplacingChars(favorites.getProductName())));
@@ -170,20 +170,29 @@ public class UpdateUtils {
                 favoritesResource.addLiteral(RDF.value, ++favs);
             }
             writeModelToFile(favoritesModel, FILE_FAVORITES);
+            return Boolean.TRUE;
         } else {
             if (resultSet == null || !resultSet.hasNext()) {
-                return;
+                return Boolean.FALSE;
             }
             if (favs <= 1 || favoritesResource.getProperty(FOAF.phone) == null) {
                 favoritesModel.removeAll(favoritesResource, null, null);
                 writeModelToFile(favoritesModel, FILE_FAVORITES);
-                return;
+                return Boolean.TRUE;
             }
 
             favoritesModel.remove(favoritesResource, FOAF.phone, ResourceFactory.createStringLiteral(favorites.getAppID()));
             favoritesResource.getProperty(RDF.value).changeLiteralObject(--favs);
             writeModelToFile(favoritesModel, FILE_FAVORITES);
 
+            return Boolean.TRUE;
         }
+    }
+
+    public static void addSeller(Model tmpStoresModel, Seller seller) {
+        String priceUri = STORES_URL + seller.getName();
+        Resource priceResource = tmpStoresModel.getResource(priceUri);
+        priceResource.addProperty(RDF.type, GRSTORE_PROPERTY_URL);
+        priceResource.addLiteral(FOAF.made, seller.getImageUrl());
     }
 }

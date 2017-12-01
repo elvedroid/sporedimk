@@ -53,26 +53,28 @@ public class QueryUtils {
      * Return offers for the given category grouped by products.
      * If more than one offer includes the same product, the offer with the smallest price is returned.
      */
-    public static List<Offer> getOffersPerCategory(Model model, CatLang category) {
+    public static List<Offer> getOffersPerCategory(Model model, CatLang category, Integer page, Integer perPage) {
         List<Offer> offerList = new ArrayList<Offer>();
 
-        String queryGetProductWithMinPrice = "SELECT ?product (MIN(?price) AS ?minPrice)\n" +
-                "WHERE { \n" +
-                "?offer gr:includes ?product;\n" +
-                "gr:hasPriceSpecification ?priceSpec.\n" +
-                "?priceSpec gr:hasCurrencyValue ?price }\n" +
-                "GROUP BY ?product\n";
+        String queryGetProductWithMinPrice =
+                "SELECT ?product (MIN(?price) AS ?minPrice)\n" +
+                        "WHERE { \n" +
+                        "?offer gr:includes ?product;\n" +
+                        "gr:hasPriceSpecification ?priceSpec.\n" +
+                        "?priceSpec gr:hasCurrencyValue ?price. }\n" +
+                        "GROUP BY ?product";
 
         String query = "PREFIX gr: <http://purl.org/goodrelations/v1#>\n" +
-                "SELECT ?offer\n" +
+                "SELECT ?offer ?minPrice\n" +
                 "WHERE {\n" +
                 "?offer gr:category ?category;\n" +
                 "gr:includes ?product;\n" +
                 "gr:hasPriceSpecification ?priceSpec.\n" +
-                "?priceSpec gr:hasCurrencyValue ?price1.\n" +
+                "?priceSpec gr:hasCurrencyValue ?minPrice.\n" +
                 "{ " + queryGetProductWithMinPrice + " }" +
                 "FILTER(lcase(str(?category)) = \"" + category.getCategoryName().toLowerCase() + "\" )" +
-                " }";
+                " }\n" +
+                "ORDER BY ASC(?minPrice) \n LIMIT " + perPage + "\n OFFSET " + page * perPage;
 
         ResultSet resultSet = executeQuery(model, query);
         for (; resultSet != null && resultSet.hasNext(); ) {
@@ -275,6 +277,37 @@ public class QueryUtils {
                 "?fav rdf:value ?count.\n" +
                 " }\n" +
                 "ORDER BY DESC(?count) \n LIMIT 10";
+
+        ResultSet resultSet = executeQuery(model, query);
+        List<Offer> offerList = new ArrayList<Offer>();
+        for (; resultSet != null && resultSet.hasNext(); ) {
+            Offer offer = new Offer();
+            QuerySolution soln = resultSet.nextSolution();
+            Resource r = soln.getResource("offer"); // Get a result variable - must be a resource
+            offer.setName(r.getProperty(model.getProperty(BASE_GR_URL, GRNAME_PROPERTY_URL)).getString());
+            String categoryStr = r.getProperty(model.getProperty(BASE_GR_URL, GRCATEGORY_PROPERTY_URL)).getString();
+            offer.setCategory(new Category(categoryStr));
+            offer.setProduct(getProductFromResource(model, r.getPropertyResourceValue(model.getProperty(BASE_GR_URL, GRINCLUDES_PROPERTY_URL))));
+            offer.setPrice(getPriceFromResource(model, r.getPropertyResourceValue(model.getProperty(BASE_GR_URL, GRHAS_PRICE_SPECS_PROPERTY_URL))));
+            offer.setUrl(r.getProperty(FOAF.made).getString());
+            offerList.add(offer);
+        }
+        return offerList;
+    }
+
+    public static List<Offer> getFilteredOffers(Model model, String phrase, String lang, Integer page, Integer perPage) {
+        String query = "PREFIX favs: <http://purl.org/net/esm-owl/favorites#>\n" +
+                "PREFIX foaf: <http://xmlns.com/foaf/0.1/>\n" +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "PREFIX gr: <http://purl.org/goodrelations/v1#>\n" +
+                "PREFIX vcard30: <http://www.w3.org/2001/vcard-rdf/3.0#>\n" +
+                "SELECT ?offer \n" +
+                "WHERE {\n" +
+                "?offer gr:includes ?product .\n" +
+                "?product gr:name ?name.\n" +
+                "FILTER regex(?name, \"" + phrase + "\", \"i\")" +
+                " }\n" +
+                "LIMIT " + perPage + "\n OFFSET " + page * perPage;
 
         ResultSet resultSet = executeQuery(model, query);
         List<Offer> offerList = new ArrayList<Offer>();

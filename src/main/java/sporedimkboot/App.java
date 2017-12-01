@@ -2,6 +2,7 @@ package sporedimkboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * Hello world!
@@ -9,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
-//@EnableJpaRepositories(basePackages = "sporedimkboot.repository")
+@EnableScheduling
 public class App
 {
     public static void main( String[] args )
