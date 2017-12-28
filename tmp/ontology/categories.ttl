@@ -41,7 +41,17 @@ cat:led_телевизори a rdfs:Resource;
     gr:name "LED Телевизори"@en, "LED Телевизори"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10056-180x135.png" .
 
- cat:lcd_телевизори a rdfs:Resource;
+cat:oled_телевизори a rdfs:Resource;
+    cat:subCategoryOf cat:телевизори ;
+    gr:name "OLED Телевизори"@en, "OLED Телевизори"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84051123/84051123-150x150.jpg" .
+
+cat:qled_телевизори a rdfs:Resource;
+    cat:subCategoryOf cat:телевизори ;
+    gr:name "QLED Телевизори"@en, "QLED Телевизори"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/qled-150x150-150x150.jpg" .
+
+cat:lcd_телевизори a rdfs:Resource;
     cat:subCategoryOf cat:телевизори ;
     gr:name "LCD Телевизори"@en, "LCD Телевизори"@mk ;
     foaf:made "https://s-media-cache-ak0.pinimg.com/originals/71/4d/f2/714df2d8957cb13b011edda3bed510a5.jpg" .
@@ -56,10 +66,18 @@ cat:преносно_аудио a rdfs:Resource;
     gr:name "Преносно аудио"@en, "Преносно аудио"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09143949_name.jpg" .
 
+cat:портабл_cd_радиокасетофони a rdfs:Resource;
+    cat:subCategoryOf cat:тв___аудио ;
+    gr:name "Портабл CD радиокасетофони"@en, "Портабл CD радиокасетофони"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84034912/84034912-150x150.jpg" .
+
 cat:mp3_mp4_уреди a rdfs:Resource;
     cat:subCategoryOf cat:преносно_аудио ;
     gr:name "MP3/MP4 уреди"@en, "MP3/MP4 уреди"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09081925_name.jpg" .
+
+cat:mp3_mp4_плеери a rdfs:Resource ;
+    owl:sameAs cat:mp3_mp4_уреди .
 
 cat:радио_приемник a rdfs:Resource;
     cat:subCategoryOf cat:преносно_аудио ;
@@ -86,11 +104,22 @@ cat:ac_dc_адаптери a rdfs:Resource;
     gr:name "AC/DC адаптери"@en, "AC/DC адаптери"@mk ;
     foaf:made "https://www.neptun.mk/image/cache/data/oprema-za-avtomobili-150x150.jpg" .
   
+cat:портабл_звучници__докинг a rdfs:Resource;
+    cat:subCategoryOf cat:аудио_опрема ;
+    gr:name "Портабл звучници, докинг"@en, "Портабл звучници, докинг"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84043118/84043118-150x150.jpg" .
+
 cat:слушалки__микрофони_и_звучници a rdfs:Resource;
     cat:subCategoryOf cat:аудио_опрема ;
     gr:name "Слушалки, микрофони и звучници"@en, "Слушалки, микрофони и звучници"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1502037997n_1.jpg" .
-  
+
+cat:микрофони a rdfs:Resource ;
+    owl:sameAs cat:слушалки__микрофони_и_звучници .
+
+cat:слушалки a rdfs:Resource ;
+    owl:sameAs cat:слушалки__микрофони_и_звучници .
+
 cat:аудио_опрема_галантерија a rdfs:Resource;
     cat:subCategoryOf cat:аудио_опрема ;
     gr:name "Галантерија за Аудио опрема"@en, "Галантерија за Аудио опрема"@mk ;
@@ -100,6 +129,9 @@ cat:аудио_системи a rdfs:Resource;
     cat:subCategoryOf cat:тв___аудио ;
     gr:name "Аудио системи"@en, "Аудио системи"@mk ;
     foaf:made "http://tehnomarket.com.mk/product/9152463/trevi-hcx-1080bt-hi-fi-mini-system-white#14686" .
+
+cat:музички_системи a rdfs:Resource ;
+    owl:sameAs cat:аудио_системи .
 
 cat:мини_системи a rdfs:Resource;
     cat:subCategoryOf cat:аудио_системи ;
@@ -200,7 +232,10 @@ cat:hi_fi_аудио_уреди_за_во_автомобил a rdfs:Resource;
     cat:subCategoryOf cat:аудио_за_автомобил ;
     gr:name "HI-FI Аудио уреди за во автомобил"@en, "HI-FI Аудио уреди за во автомобил"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10063-180x135.png" .
-  
+
+cat:hifi_опрема a rdfs:Resource ;
+    owl:sameAs cat:hi_fi_аудио_уреди_за_во_автомобил .
+
 cat:опрема_за_напојување a rdfs:Resource;
     cat:subCategoryOf cat:тв___аудио ;
     gr:name "Опрема за напојување"@en, "Опрема за напојување"@mk ;
@@ -229,6 +264,9 @@ cat:мемориски_картички_и_читачи a rdfs:Resource;
     cat:subCategoryOf cat:фото___видео ;
     gr:name "Мемориски Картички и читачи"@en, "Мемориски Картички и читачи"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1503496198n_1.jpg" .
+
+cat:мемориски_картички a rdfs:Resource ;
+    owl:sameAs cat:мемориски_картички_и_читачи .
 
 cat:ms_картици a rdfs:Resource;
     cat:subCategoryOf cat:мемориски_картички_и_читачи ;
@@ -270,9 +308,17 @@ cat:камери a rdfs:Resource;
     gr:name "Камери"@en, "Камери"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1483457310n_1.jpg" .
 
+cat:акциони_камери a rdfs:Resource;
+    cat:subCategoryOf cat:фото___видео ;
+    gr:name "Акциони камери"@en, "Акциони камери"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/akcioni-kameri-150x150.jpg" .
+
+cat:action_camera  a rdfs:Resource ;
+    owl:sameAs cat:акциони_камери .
+
 cat:дититални_фотоапарати a rdfs:Resource;
     cat:subCategoryOf cat:фото___видео ;
-    gr:name "Дититални фотоапарати"@en, "Дититални фотоапарати"@mk ;
+    gr:name "Дигитални фотоапарати"@en, "Дигитални фотоапарати"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09135729_name.jpg" .
 
 cat:хибридни_дигитални_фотоапарати a rdfs:Resource;
@@ -285,10 +331,26 @@ cat:дигитални_фотоапарати a rdfs:Resource;
     gr:name "Дигитални фотоапарати"@en, "Дигитални фотоапарати"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09134699_name.jpg" .
 
-cat:dslr_камери a rdfs:Resource;
+cat:дигитални_апарати  a rdfs:Resource ;
+    owl:sameAs cat:дигитални_фотоапарати .
+
+cat:DSLR_апарати a rdfs:Resource;
     cat:subCategoryOf cat:дититални_фотоапарати ;
     gr:name "DSLR Камери"@en, "DSLR Камери"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09135729_name.jpg" .
+
+cat:објективи a rdfs:Resource;
+    cat:subCategoryOf cat:дититални_фотоапарати ;
+    gr:name "Објективи"@en, "Објективи"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84041233/84041233-150x150.jpg" .
+
+cat:батерии_и_полначи a rdfs:Resource;
+    cat:subCategoryOf cat:дититални_фотоапарати ;
+    gr:name "Батерии и полначи"@en, "Батерии и полначи"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84043096/84043096-150x150.jpg" .
+
+cat:дигитални_апарати  a rdfs:Resource ;
+    owl:sameAs cat:dslr_камери .
 
 cat:mirrorless a rdfs:Resource;
     cat:subCategoryOf cat:дититални_фотоапарати ;
@@ -304,6 +366,9 @@ cat:торби_за_камери a rdfs:Resource;
     cat:subCategoryOf cat:опрема_за_фото_и_видео ;
     gr:name "Торби за камери"@en, "Торби за камери"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09033815_name.jpg" .
+
+cat:фото_апарати_и_камери_торбички  a rdfs:Resource ;
+    owl:sameAs cat:торби_за_камери .
 
 cat:галантерија_за_фотоапарати a rdfs:Resource;
     cat:subCategoryOf cat:опрема_за_фото_и_видео ;
@@ -370,6 +435,9 @@ cat:аларми a rdfs:Resource;
     gr:name "Аларми"@en, "Аларми"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10220-180x135.png" .
 
+cat:радио_будилници a rdfs:Resource ;
+    owl:sameAs cat:аларми .
+
 cat:it_продукти a rdfs:Resource;
     gr:name "IT Products"@en, "IT Продукти"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1491385400n_1.jpg" .   
@@ -398,6 +466,11 @@ cat:графички_таблети a rdfs:Resource;
     cat:subCategoryOf cat:таблет ;
     gr:name "Графички Таблети"@en, "Графички Таблети"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10204-180x135.png" .
+
+cat:галантерија_за_таблети a rdfs:Resource;
+    cat:subCategoryOf cat:таблет ;
+    gr:name "Галантерија за таблети"@en, "Галантерија за таблети"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84046049/84046049-150x150.jpg" .
 
 cat:печатачи_и_скенери a rdfs:Resource;
     cat:subCategoryOf cat:it_продукти ;
@@ -464,6 +537,9 @@ cat:компјутерски_звучници a rdfs:Resource;
     gr:name "Компјутерски звучници"@en, "Компјутерски звучници"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09132391_name.jpg" .
 
+cat:звучници a rdfs:Resource ;
+    owl:sameAs cat:компјутерски_звучници .
+
 cat:pc_микрофони a rdfs:Resource;
     cat:subCategoryOf cat:компјутерска_опрема ;
     gr:name "PC Mикрофони"@en, "PC Mикрофони"@mk ;
@@ -474,10 +550,16 @@ cat:веб_камери a rdfs:Resource;
     gr:name "Веб камери"@en, "Веб камери"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09028602_name.jpg" .
 
+cat:web_камери a rdfs:Resource ;
+    owl:sameAs cat:веб_камери .
+
 cat:глувче a rdfs:Resource;
     cat:subCategoryOf cat:компјутерска_опрема ;
     gr:name "Глувче"@en, "Глувче"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09138689_name.jpg" .
+
+cat:глувчиња a rdfs:Resource ;
+    owl:sameAs cat:глувче .
 
 cat:мрежа a rdfs:Resource;
     cat:subCategoryOf cat:компјутерска_опрема ;
@@ -522,6 +604,9 @@ cat:ташни a rdfs:Resource;
 cat:торби_за_преносни_компјутери a rdfs:Resource ;
     owl:sameAs cat:ташни .
 
+cat:компјутери_торбички a rdfs:Resource ;
+    owl:sameAs cat:ташни .
+
 cat:ладилник__cooler__со_лежиште a rdfs:Resource;
     cat:subCategoryOf cat:дополнителна_опрема_за_преносни_компјутери ;
     gr:name "Ладилник (Cooler) со лежиште"@en, "Ладилник (Cooler) со лежиште"@mk ;
@@ -557,6 +642,9 @@ cat:преносни_компјутери a rdfs:Resource;
     gr:name "Преносни компјутери"@en, "Преносни компјутери"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1491385400n_1.jpg" .
 
+cat:gaming_лаптопи a rdfs:Resource ;
+    owl:sameAs cat:преносни_компјутери .
+
 cat:електронски_книги a rdfs:Resource;
     cat:subCategoryOf cat:it_продукти ;
     gr:name "Електронски книги"@en, "Електронски книги"@mk ;
@@ -571,6 +659,9 @@ cat:it_кабли a rdfs:Resource;
     cat:subCategoryOf cat:it_продукти_опрема ;
     gr:name "IT кабли"@en, "IT кабли"@mk ;
     foaf:made "http://cdn.korg.com/it/products/upload/7f32f9cb940b85c3ce280ca5150b01cc_pc.png" .
+
+cat:кабли_и_полначи a rdfs:Resource ;
+    owl:sameAs cat:it_кабли .
 
 cat:cd_футрола a rdfs:Resource;
     cat:subCategoryOf cat:it_продукти_опрема ;
@@ -667,6 +758,9 @@ cat:usb_флеш a rdfs:Resource;
     gr:name "USB Флеш"@en, "USB Флеш"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1488235435n_1.jpg" .
 
+cat:usb_производи a rdfs:Resource ;
+    owl:sameAs cat:usb_флеш .
+
 cat:надворешен_hdd a rdfs:Resource;
     cat:subCategoryOf cat:hdd___usb_флеш ;
     gr:name "Надворешен HDD"@en, "Надворешен HDD"@mk ;
@@ -682,10 +776,16 @@ cat:компјутери a rdfs:Resource;
     gr:name "Компјутери"@en, "Компјутери"@mk ;
     foaf:made "http://www.seo99.in/vinayak/wp-content/uploads/2015/08/computer-on-rent.png" .
 
+cat:gaming_десктоп_компјутери a rdfs:Resource ;
+    owl:sameAs cat:компјутери .
+
 cat:опрема_за_компјутери a rdfs:Resource;
     cat:subCategoryOf cat:персонални_компјутери ;
     gr:name "Опрема за компјутери"@en, "Опрема за компјутери"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10223-180x135.png" .
+
+cat:додатоци_за_компјутери a rdfs:Resource ;
+    owl:sameAs cat:опрема_за_компјутери .
 
 cat:консумативи_за_принтери a rdfs:Resource;
     cat:subCategoryOf cat:it_продукти ;
@@ -771,6 +871,16 @@ cat:мобилни_телефони a rdfs:Resource;
     gr:name "Мобилни телефони"@en, "Мобилни телефони"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10067-180x135.png" .
 
+cat:screen_protector a rdfs:Resource;
+    cat:subCategoryOf cat:мобилни_телефони_и_опрема ;
+    gr:name "Screen protector"@en, "Screen protector"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/screen-protector-range-150x150.jpg" .
+
+cat:selfie_stick a rdfs:Resource;
+    cat:subCategoryOf cat:мобилни_телефони_и_опрема ;
+    gr:name "Selfie stick"@en, "Selfie stick"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/selfie-stick-150x150.jpg" .
+
 cat:power_bank a rdfs:Resource;
     cat:subCategoryOf cat:мобилни_телефони_и_опрема ;
     gr:name "Power bank"@en, "Power bank"@mk ;
@@ -781,6 +891,16 @@ cat:bluetooth_играчки a rdfs:Resource;
     gr:name "Bluetooth gadgets"@en, "Bluetooth играчки"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10075-180x135.png" .
 
+cat:торбици a rdfs:Resource;
+    cat:subCategoryOf cat:мобилни_телефони_и_опрема ;
+    gr:name "Tорбици"@en, "Tорбици"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84041290/84041290-150x150.jpg" .
+
+cat:smart_watches__activity_trackers__vr a rdfs:Resource;
+    cat:subCategoryOf cat:комуникации_и_телефони ;
+    gr:name "Smart watches, Activity trackers, VR"@en, "Smart watches, Activity trackers, VR"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/SmartWatch-150x150.jpg" .
+
 cat:телефони a rdfs:Resource;
     cat:subCategoryOf cat:комуникации_и_телефони ;
     gr:name "Телефони"@en, "Телефони"@mk ;
@@ -790,6 +910,9 @@ cat:стандардни_телефони a rdfs:Resource;
     cat:subCategoryOf cat:телефони ;
     gr:name "Стандардни телефони"@en, "Стандардни телефони"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1498043774n_1.jpg" .
+
+cat:жичани_телефони a rdfs:Resource ;
+    owl:sameAs cat:стандардни_телефони .
 
 cat:факс a rdfs:Resource;
     cat:subCategoryOf cat:телефони ;
@@ -805,6 +928,9 @@ cat:бежичен_телефон a rdfs:Resource;
     cat:subCategoryOf cat:телефони ;
     gr:name "Бежичен телефон"@en, "Бежичен телефон"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09137724_name.jpg" .
+
+cat:dect_телефони a rdfs:Resource ;
+    owl:sameAs cat:бежичен_телефон .
 
 cat:pbx_системи a rdfs:Resource;
     cat:subCategoryOf cat:комуникации_и_телефони ;
@@ -845,6 +971,29 @@ cat:стандард_сплит a rdfs:Resource;
     gr:name "Стандард сплит"@en, "Стандард сплит"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1498057381n_1.jpg" .
 
+cat:сплит_системи a rdfs:Resource;
+    owl:sameAs cat:стандард_сплит .
+
+cat:стандард_сплит a rdfs:Resource;
+    cat:subCategoryOf cat:стандардни_сплит_климатизери ;
+    gr:name "Стандард сплит"@en, "Стандард сплит"@mk ;
+    foaf:made "http://tehnomarket.com.mk/img/products/full/1498057381n_1.jpg" .
+
+cat:стандард_сплит a rdfs:Resource;
+    cat:subCategoryOf cat:стандардни_сплит_климатизери ;
+    gr:name "Стандард сплит"@en, "Стандард сплит"@mk ;
+    foaf:made "http://tehnomarket.com.mk/img/products/full/1498057381n_1.jpg" .
+
+cat:камини_на_дрва a rdfs:Resource;
+    cat:subCategoryOf cat:стандардни_сплит_климатизери ;
+    gr:name "Камини на дрва"@en, "Камини на дрва"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84037660/84037660-150x150.jpg" .
+
+cat:радијатори a rdfs:Resource;
+    cat:subCategoryOf cat:стандардни_сплит_климатизери ;
+    gr:name "Радијатори"@en, "Радијатори"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84037794/84037794-150x150.jpg" .
+
 cat:бојлери a rdfs:Resource;
     cat:subCategoryOf cat:греење__ладење_и_бојлери ;
     gr:name "Бојлери"@en, "Бојлери"@mk ;
@@ -860,10 +1009,19 @@ cat:инвертер a rdfs:Resource;
     gr:name "Инвертер"@en, "Инвертер"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1483104581n_1.jpg" .
 
+cat:инвертер_системи a rdfs:Resource;
+    owl:sameAs cat:инвертер .
+
 cat:греалки a rdfs:Resource;
     cat:subCategoryOf cat:греење__ладење_и_бојлери ;
     gr:name "Греалки"@en, "Греалки"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09124038_name.jpg" .
+
+cat:калорифери a rdfs:Resource;
+    owl:sameAs cat:греалки .
+
+cat:панелни_греалки a rdfs:Resource;
+    owl:sameAs cat:греалки .
 
 cat:бела_техника a rdfs:Resource;
     gr:name "White Goods"@en, "Бела Техника"@mk ;
@@ -887,10 +1045,16 @@ cat:вградни_машини_за_миење_садови a rdfs:Resource;
 cat:вградлива_бела_техника_машини_за_садови a rdfs:Resource;
     owl:sameAs cat:вградни_машини_за_миење_садови .
 
+cat:вградна_техника_машини_за_садови a rdfs:Resource;
+    owl:sameAs cat:вградни_машини_за_миење_садови .
+
 cat:вградни_фрижидери a rdfs:Resource;
     cat:subCategoryOf cat:вградлива_бела_техника ;
     gr:name "Вградни фрижидери"@en, "Вградни фрижидери"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10110-180x135.png" .
+
+cat:вградна_техника_фрижидери a rdfs:Resource;
+    owl:sameAs cat:вградни_фрижидери .
 
 cat:вградлива_бела_техника_ладилници a rdfs:Resource;
     cat:subCategoryOf cat:вградлива_бела_техника ;
@@ -905,12 +1069,18 @@ cat:вгадна_машина_за_перење_алишта a rdfs:Resource;
     gr:name "Вгадна машина за перење алишта"@en, "Вгадна машина за перење алишта"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10091-180x135.png" .
 
+cat:вградна_техника_машини_за_перење a rdfs:Resource;
+    owl:sameAs cat:вгадна_машина_за_перење_алишта .
+
 cat:вградни_фурни a rdfs:Resource;
     cat:subCategoryOf cat:вградлива_бела_техника ;
     gr:name "Вградни фурни"@en, "Вградни фурни"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09142656_name.jpg" .
 
 cat:вградлива_бела_техника_фурни a rdfs:Resource;
+    owl:sameAs cat:вградни_фурни .
+
+cat:вградна_техника_фурни a rdfs:Resource;
     owl:sameAs cat:вградни_фурни .
 
 cat:вградни_плотни_и_фурни__комплети_ a rdfs:Resource;
@@ -926,6 +1096,9 @@ cat:вградни_плотни a rdfs:Resource;
 cat:вградлива_бела_техника_плотни a rdfs:Resource;
     owl:sameAs cat:вградни_плотни .
 
+cat:вградна_техника_плотни a rdfs:Resource;
+    owl:sameAs cat:вградни_плотни .
+
 cat:вградни_микробранови_печки a rdfs:Resource;
     cat:subCategoryOf cat:вградлива_бела_техника ;
     gr:name "Вградни микробранови печки"@en, "Вградни микробранови печки"@mk ;
@@ -934,10 +1107,16 @@ cat:вградни_микробранови_печки a rdfs:Resource;
 cat:вградлива_бела_техника_микробранови a rdfs:Resource;
     owl:sameAs cat:вградни_микробранови_печки .
 
+cat:вградна_техника_микробранови_печки a rdfs:Resource;
+    owl:sameAs cat:вградни_микробранови_печки .
+
 cat:вградни_аспиратори a rdfs:Resource;
     cat:subCategoryOf cat:вградлива_бела_техника ;
     gr:name "Вградни аспиратори"@en, "Вградни аспиратори"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10111-180x135.png" .
+
+cat:вградна_техника_аспиратори a rdfs:Resource;
+    owl:sameAs cat:вградни_аспиратори .
 
 cat:акцесоари_за_бела_техника a rdfs:Resource;
     cat:subCategoryOf cat:бела_техника ;
@@ -964,6 +1143,15 @@ cat:машини_за_алишта a rdfs:Resource;
     gr:name "Машини за алишта"@en, "Машини за алишта"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09139985_name.jpg" .
 
+cat:машини_за_перење a rdfs:Resource;
+    owl:sameAs cat:машини_за_алишта .
+
+cat:машини_за_перење_сушење a rdfs:Resource;
+    owl:sameAs cat:машини_за_алишта .
+
+cat:машини_за_сушење a rdfs:Resource;
+    owl:sameAs cat:машини_за_алишта .
+
 cat:аспиратори a rdfs:Resource;
     cat:subCategoryOf cat:бела_техника ;
     gr:name "Аспиратори"@en, "Аспиратори"@mk ;
@@ -979,15 +1167,27 @@ cat:ладилници a rdfs:Resource;
     gr:name "Ладилници"@en, "Ладилници"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10101-180x135.png" .
 
+cat:замрзнувачи_вертикални a rdfs:Resource;
+    owl:sameAs cat:ладилници .
+
+cat:замрзнувачи_хоризонтални a rdfs:Resource;
+    owl:sameAs cat:ладилници .
+
 cat:фрижидери a rdfs:Resource;
     cat:subCategoryOf cat:фрижидери_и_ладилници ;
     gr:name "Фрижидери"@en, "Фрижидери"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10096-180x135.png" .
 
+cat:комбинирани_фрижидери a rdfs:Resource;
+    owl:sameAs cat:фрижидери .
+
 cat:двокрилни_ладилници a rdfs:Resource;
     cat:subCategoryOf cat:фрижидери_и_ладилници ;
     gr:name "Двокрилни ладилници"@en, "Двокрилни ладилници"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09126188_name.jpg" .
+
+cat:side_by_side_фрижидери a rdfs:Resource;
+    owl:sameAs cat:двокрилни_ладилници .
 
 cat:автомати_за_вода a rdfs:Resource;
     cat:subCategoryOf cat:бела_техника ;
@@ -1013,6 +1213,11 @@ cat:мелница_за_кафе a rdfs:Resource;
     gr:name "Мелница за кафе"@en, "Мелница за кафе"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09146802_name.jpg" .
 
+cat:кујнски_садови a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Кујнски садови"@en, "Кујнски садови"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84040991/84040991-150x150.jpg" .
+
 cat:кујнски_ваги a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
     gr:name "Кујнски ваги"@en, "Кујнски ваги"@mk ;
@@ -1033,15 +1238,26 @@ cat:кафемати a rdfs:Resource;
     gr:name "Кафемати"@en, "Кафемати"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09138348_name.jpg" .
 
-cat:решоа a rdfs:Resource;
+cat:мини_шпорети_и_решоа a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
-    gr:name "Решоа"@en, "Решоа"@mk ;
-    foaf:made "http://tehnomarket.com.mk/img/products/full/1483539252n_1.jpg" .
+    gr:name "Мини шпорети и решоа"@en, "Мини шпорети и решоа"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84037352/84037352-150x150.jpg" .
+
+cat:решоа a rdfs:Resource;
+    owl:sameAs cat:мини_шпорети_и_решоа .
 
 cat:пасатори a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
     gr:name "Пасатори"@en, "Пасатори"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09148207_name.jpg" .
+
+cat:рачни_пасатори a rdfs:Resource;
+    owl:sameAs cat:пасатори .
+
+cat:шејкери a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Шејкери"@en, "Шејкери"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84035188/84035188-150x150.jpg" .
 
 cat:електрични_бокали a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
@@ -1052,6 +1268,9 @@ cat:бокал_за_вода_со_филтер a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
     gr:name "Бокал за вода со филтер"@en, "Бокал за вода со филтер"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09076190_name.jpg" .
+
+cat:термо_бокали a rdfs:Resource;
+    owl:sameAs cat:бокал_за_вода_со_филтер .
 
 cat:електрични_апарати a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
@@ -1091,6 +1310,9 @@ cat:уреди_за_готвење_на_пареа a rdfs:Resource;
     gr:name "Уреди за готвење на пареа"@en, "Уреди за готвење на пареа"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1490964757n_1.jpg" .
 
+cat:готвачи_на_пареа a rdfs:Resource;
+    owl:sameAs cat:уреди_за_готвење_на_пареа .
+
 cat:тостери a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
     gr:name "Тостери"@en, "Тостери"@mk ;
@@ -1106,20 +1328,37 @@ cat:мелница_за_месо a rdfs:Resource;
     gr:name "Мелница за месо"@en, "Мелница за месо"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1502975055n_1.jpg" .
 
+cat:месорезници a rdfs:Resource;
+    owl:sameAs cat:мелница_за_месо .
+
+cat:машини_за_мелење_месо a rdfs:Resource;
+    owl:sameAs cat:мелница_за_месо .
+
 cat:соковници a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
     gr:name "Соковници"@en, "Соковници"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09142798_name.jpg" .
+
+cat:цедалки a rdfs:Resource;
+    cat:subCategoryOf cat:кујнски_апарати ;
+    gr:name "Цедалки"@en, "Цедалки"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/2803303/2803303-150x150.jpg" .
 
 cat:multi_cooker a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
     gr:name "Multi Cooker"@en, "Multi Cooker"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/09132188_name.jpg" .
 
+cat:мултипрактик a rdfs:Resource;
+    owl:sameAs cat:multi_cooker .
+
 cat:апарати_за_правење_леб a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
     gr:name "Апарати за правење леб"@en, "Апарати за правење леб"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10128-180x135.png" .
+
+cat:апарати_за_леб a rdfs:Resource;
+    owl:sameAs cat:апарати_за_правење_леб .
 
 cat:машини_за_рендање_и_нарежување a rdfs:Resource;
     cat:subCategoryOf cat:кујнски_апарати ;
@@ -1179,10 +1418,13 @@ cat:машинки_за_потстрижување a rdfs:Resource;
 cat:машинка_за_потстрижување a rdfs:Resource;
     owl:sameAs cat:машинки_за_потстрижување .
 
-cat:депилатари a rdfs:Resource;
+cat:депилатори a rdfs:Resource;
     cat:subCategoryOf cat:лична_грижа_и_убавина ;
-    gr:name "Депилатари"@en, "Депилатари"@mk ;
+    gr:name "Депилатори"@en, "Депилатори"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10149-180x135.png" .
+
+cat:депилатари a rdfs:Resource;
+    owl:sameAs cat:депилатори .
 
 cat:вага a rdfs:Resource;
     cat:subCategoryOf cat:лична_грижа_и_убавина ;
@@ -1190,6 +1432,9 @@ cat:вага a rdfs:Resource;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10152-180x135.png" .
 
 cat:подни_ваги a rdfs:Resource;
+    owl:sameAs cat:вага .
+
+cat:телесни_ваги a rdfs:Resource;
     owl:sameAs cat:вага .
 
 cat:електрични_четки a rdfs:Resource;
@@ -1200,10 +1445,29 @@ cat:електрични_четки a rdfs:Resource;
 cat:ел__четки_за_заби a rdfs:Resource;
     owl:sameAs cat:електрични_четки .
 
+cat:електрични_четки_за_заби a rdfs:Resource;
+    owl:sameAs cat:електрични_четки .
+
+cat:додатоци_за_четки a rdfs:Resource;
+    owl:sameAs cat:електрични_четки .
+
+cat:air_floss a rdfs:Resource;
+    owl:sameAs cat:електрични_четки .
+
 cat:фенови a rdfs:Resource;
     cat:subCategoryOf cat:лична_грижа_и_убавина ;
     gr:name "Фенови"@en, "Фенови"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10146-180x135.png" .
+
+cat:пегли_за_коса a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Пегли за коса"@en, "Пегли за коса"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84035623/84035623-150x150.jpg" .
+
+cat:фигаро a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Фигаро"@en, "Фигаро"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84034922/84034922-150x150.jpg" .
 
 cat:апарати_за_нега a rdfs:Resource;
     cat:subCategoryOf cat:лична_грижа_и_убавина ;
@@ -1217,11 +1481,16 @@ cat:апарат_за_крвен_притисок a rdfs:Resource;
 
 cat:машинка_за_бричење a rdfs:Resource;
     cat:subCategoryOf cat:лична_грижа_и_убавина ;
-    gr:name "Машинка за бричење"@en, "Машинка за бричењеПегли"@mk ;
+    gr:name "Машинка за бричење"@en, "Машинка за бричење"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10151-180x135.png" .
 
 cat:машинки_за_бричење a rdfs:Resource;
     owl:sameAs cat:машинка_за_бричење .
+
+cat:тримери a rdfs:Resource;
+    cat:subCategoryOf cat:лична_грижа_и_убавина ;
+    gr:name "Тримери"@en, "Тримери"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84042145/84042145-150x150.jpg" .
 
 cat:масажери a rdfs:Resource;
     cat:subCategoryOf cat:лична_грижа_и_убавина ;
@@ -1268,10 +1537,29 @@ cat:вентилатори_и_прочистувачи_на_воздух a rdfs:
     gr:name "Вентилатори и Прочистувачи на воздух"@en, "Вентилатори и Прочистувачи на воздух"@mk ;
     foaf:made "http://tehnomarket.com.mk/img/products/full/1499178349n_1.jpg" .
 
+cat:прочистувачи a rdfs:Resource ;
+    owl:sameAs cat:вентилатори_и_прочистувачи_на_воздух .
+
+cat:одвлажнувачи a rdfs:Resource ;
+    owl:sameAs cat:вентилатори_и_прочистувачи_на_воздух .
+
+cat:навлажнувачи a rdfs:Resource ;
+    owl:sameAs cat:вентилатори_и_прочистувачи_на_воздух .
+
 cat:правосмукалки a rdfs:Resource;
     cat:subCategoryOf cat:домашни_апарати ;
     gr:name "Правосмукалки"@en, "Правосмукалки"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10160-180x135.png" .
+
+cat:осветлување a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Oсветлување"@en, "Oсветлување"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84041725/84041725-150x150.jpg" .
+
+cat:детергенти_и_средства_за_домаќинство a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Детергенти и средства за домаќинство"@en, "Детергенти и средства за домаќинство"@mk ;
+    foaf:made "https://www.neptun.mk/image/cache/data/products/84040287/84040287-150x150.jpg" .
 
 cat:апарати_за_филтрирање_вода a rdfs:Resource;
     cat:subCategoryOf cat:домашни_апарати ;
@@ -1283,10 +1571,35 @@ cat:чистач_со_пареа a rdfs:Resource;
     gr:name "Чистач со пареа"@en, "Чистач со пареа"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10166-180x135.png" .
 
+cat:садопери a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Садопери"@en, "Садопери"@mk ;
+    foaf:made "https://www.neptun.mk/image/data/products/84052341/7_43f344fe-e5a6-49c4-8535-e97811503916.jpg" .
+
+cat:чешми a rdfs:Resource;
+    cat:subCategoryOf cat:домашни_апарати ;
+    gr:name "Чешми"@en, "Чешми"@mk ;
+    foaf:made "https://www.neptun.mk/image/data/products/84040657/4f22f8f5-6af1-448c-b287-d3c6857b7502.jpg" .
+
 cat:додатоци a rdfs:Resource;
     cat:subCategoryOf cat:домашни_апарати ;
     gr:name "Додатоци"@en, "Додатоци"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10165-180x135.png" .
+
+cat:вреќи_за_правосмукалки a rdfs:Resource ;
+    owl:sameAs cat:додатоци .
+
+cat:сушари a rdfs:Resource ;
+    owl:sameAs cat:додатоци .
+
+cat:филтри_за_правосмукакли a rdfs:Resource ;
+    owl:sameAs cat:додатоци .
+
+cat:даски_за_пеглање a rdfs:Resource ;
+    owl:sameAs cat:додатоци .
+
+cat:филтри_за_аспиратори a rdfs:Resource ;
+    owl:sameAs cat:додатоци .
 
 cat:забава___рекреација a rdfs:Resource;
     gr:name "Fun & Recreation"@en, "Забава & Рекреација"@mk ;
@@ -1307,6 +1620,9 @@ cat:книги a rdfs:Resource;
     gr:name "Games"@en, "Софтвер за игри"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10224-180x135.png" .  
 
+cat:игри a rdfs:Resource ;
+    owl:sameAs cat:софтвер_за_игри .
+
  cat:велосипеди a rdfs:Resource;
     cat:subCategoryOf cat:забава___рекреација ;
     gr:name "Bicycles"@en, "Велосипеди"@mk ;
@@ -1316,6 +1632,12 @@ cat:книги a rdfs:Resource;
     cat:subCategoryOf cat:забава___рекреација ;
     gr:name "Consoles"@en, "Конзоли"@mk ;
     foaf:made "http://setec.mk/image/cache/data/Sliki/10226-180x135.png" .  
+
+cat:gaming_конзоли a rdfs:Resource ;
+    owl:sameAs cat:конзоли .
+
+cat:додатоци_за_конзоли a rdfs:Resource ;
+    owl:sameAs cat:конзоли .
 
  cat:спорт a rdfs:Resource;
     cat:subCategoryOf cat:забава___рекреација ;
