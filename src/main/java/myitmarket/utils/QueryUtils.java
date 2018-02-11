@@ -145,7 +145,7 @@ public class QueryUtils {
             Resource r = soln.getResource("category"); // Get a result variable - must be a resource
             Category cat = new Category();
             cat.setName(categoriesModel.getProperty(r, categoriesModel.getProperty(BASE_GR_URL, GRNAME_PROPERTY_URL), lang).getLiteral().getLexicalForm());
-            cat.setIcon(r.getProperty(FOAF.made).getString());
+            cat.setImage(r.getProperty(FOAF.made).getString());
             cat.setSubCategoryOf("");
             categories.add(cat);
         }
@@ -176,7 +176,7 @@ public class QueryUtils {
             Resource r = soln.getResource("category"); // Get a result variable - must be a resource
             Category cat = new Category();
             cat.setName(categoriesModel.getProperty(r, categoriesModel.getProperty(BASE_GR_URL, GRNAME_PROPERTY_URL), lang).getLiteral().getLexicalForm());
-            cat.setIcon(r.getProperty(FOAF.made).getString());
+            cat.setImage(r.getProperty(FOAF.made).getString());
             if (r.getPropertyResourceValue(categoriesModel.getProperty(CATEGORIES_URL, SUB_CATEGORY_OF)) == null) {
                 cat.setSubCategoryOf("");
             } else {
@@ -207,7 +207,7 @@ public class QueryUtils {
             Resource r = soln.getResource("subcat"); // Get a result variable - must be a resource
             Category cat = new Category();
             cat.setName(categoriesModel.getProperty(r, categoriesModel.getProperty(BASE_GR_URL, GRNAME_PROPERTY_URL), fromCategory.getLang()).getLiteral().getLexicalForm());
-            cat.setIcon(r.getProperty(FOAF.made).getString());
+            cat.setImage(r.getProperty(FOAF.made).getString());
             if (r.getPropertyResourceValue(categoriesModel.getProperty(CATEGORIES_URL, SUB_CATEGORY_OF)) == null) {
                 cat.setSubCategoryOf("");
             } else {

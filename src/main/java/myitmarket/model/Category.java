@@ -9,7 +9,7 @@ public class Category {
     private String uri;
     private String name;
     private String subCategoryOf;
-    private String icon;
+    private String image;
     private String sameAs;
 
     public Category() {
@@ -19,7 +19,7 @@ public class Category {
         this.uri = uri;
         this.name = name;
         this.subCategoryOf = subCategoryOf;
-        this.icon = icon;
+        this.image = icon;
     }
 
     public Category(String name) {
@@ -50,12 +50,12 @@ public class Category {
         this.subCategoryOf = subCategoryOf;
     }
 
-    public String getIcon() {
-        return icon;
+    public String getImage() {
+        return image;
     }
 
-    public void setIcon(String icon) {
-        this.icon = icon;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getSameAs() {
@@ -72,7 +72,7 @@ public class Category {
                 "uri='" + uri + '\'' +
                 ", name='" + name + '\'' +
                 ", subCategoryOf='" + subCategoryOf + '\'' +
-                ", icon='" + icon + '\'' +
+                ", image='" + image + '\'' +
                 ", sameAs='" + sameAs + '\'' +
                 '}';
     }

@@ -61,6 +61,12 @@ public class Constants {
     public static final String TEHNOMARKET = "Tehnomarket";
     public static final String TEHNOMARKET_IMAGE_URL = "http://tehnomarket.com.mk/img/tm_big_logo.png";
     public static final String NEPTUN = "Neptun";
-    public static final String NEPTUN_IMAGE_URL = "http://tehnomarket.com.mk/img/tm_big_logo.png";
+    public static final String NEPTUN_IMAGE_URL = "https://www.neptun.mk/image/data/logo.png";
+    public static final String ANHOCH = "Anhoch";
+    public static final String ANHOCH_IMAGE_URL = "http://www.anhoch.com/img/new_year_logo_anh-min.png";
+    public static final String AMC = "AMC";
+    public static final String AMC_IMAGE_URL = "https://www.amc.com.mk/content/images/thumbs/0013676.png";
+    public static final String NIKO = "NIKO";
+    public static final String NIKO_IMAGE_URL = "http://niko.com.mk/wp-content/uploads/2016/09/NIKO-1.png";
 
 }

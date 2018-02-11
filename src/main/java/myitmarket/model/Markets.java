@@ -3,5 +3,8 @@ package myitmarket.model;
 public enum Markets {
     SETEC,
     TEHNOMARKET,
-    NEPTUN
+    NEPTUN,
+    ANHOCH,
+    AMC,
+    NIKO
 }

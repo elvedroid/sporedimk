@@ -195,6 +195,6 @@ public class UpdateUtils {
         String priceUri = STORES_URL + seller.getName();
         Resource priceResource = tmpStoresModel.getResource(priceUri);
         priceResource.addProperty(RDF.type, tmpStoresModel.getProperty(BASE_GR_URL, GRSTORE_PROPERTY_URL));
-        priceResource.addLiteral(FOAF.made, seller.getImageUrl());
+        priceResource.addLiteral(FOAF.made, seller.getImage());
     }
 }

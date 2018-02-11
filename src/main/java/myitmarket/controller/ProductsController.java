@@ -6,6 +6,7 @@ import edu.uci.ics.crawler4j.fetcher.PageFetcher;
 import edu.uci.ics.crawler4j.robotstxt.RobotstxtConfig;
 import edu.uci.ics.crawler4j.robotstxt.RobotstxtServer;
 import myitmarket.crawler.NeptunCrawlerControllerFactory;
+import myitmarket.utils.CrawlerUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,8 +37,10 @@ public class ProductsController implements CrawlerContract {
 
     @Scheduled(fixedDelay = 14 * 24 * 60 * 60 * 1000)
     public void addSellers() {
+//        productService.addSeller(new Seller(Constants.SETEC, Constants.SETEC_IMAGE_URL));
 //        addSetec();
-        addNeptun();
+        productService.addSeller(new Seller(Constants.ANHOCH, Constants.ANHOCH_IMAGE_URL));
+        CrawlerUtils.addAnhoch(this);
         log.info("The time is now {}", dateFormat.format(new Date()));
     }
 
@@ -128,84 +131,31 @@ public class ProductsController implements CrawlerContract {
     public void crawlerFinish(Markets market) {
         threadCount++;
         if (threadCount > 6) {
-            if (market.equals(Markets.SETEC)) {
-                addTehnomarket();
-            } else if (market.equals(Markets.TEHNOMARKET)) {
-                addNeptun();
-            } else if (market.equals(Markets.NEPTUN)){
+            if (Markets.SETEC.equals(market)) {
+                productService.addSeller(new Seller(Constants.TEHNOMARKET, Constants.TEHNOMARKET_IMAGE_URL));
+                CrawlerUtils.addTehnomarket(this);
+            } else if (Markets.TEHNOMARKET.equals(market)) {
+                productService.addSeller(new Seller(Constants.NEPTUN, Constants.NEPTUN_IMAGE_URL));
+                CrawlerUtils.addNeptun(this);
+            } else if (Markets.NEPTUN.equals(market)){
+                productService.addSeller(new Seller(Constants.ANHOCH, Constants.ANHOCH_IMAGE_URL));
+                CrawlerUtils.addAnhoch(this);
+            } else if(Markets.ANHOCH.equals(market)){
+                productService.addSeller(new Seller(Constants.AMC, Constants.AMC_IMAGE_URL));
+                CrawlerUtils.addAMC(this);
+            } else if (Markets.AMC.equals(market)) {
+                productService.addSeller(new Seller(Constants.NIKO, Constants.NIKO_IMAGE_URL));
+                CrawlerUtils.addNIKO(this);
+            } else {
                 productService.swapModels();
             }
             threadCount = 0;
         }
     }
 
-    private void addSetec() {
-        productService.addSeller(new Seller(Constants.SETEC, Constants.SETEC_IMAGE_URL));
 
-        String crawlStorageFolder = System.getProperty("user.dir") + "/tmp/crawl/root/setec";
-        int numberOfCrawlers = 7;
-        SetecCrawlerControllerFactory factory = new SetecCrawlerControllerFactory(this);
-        CrawlConfig config = new CrawlConfig();
-        config.setCrawlStorageFolder(crawlStorageFolder);
-        config.setMaxDepthOfCrawling(3);
-        config.setPolitenessDelay(100);
-        PageFetcher pageFetcher = new PageFetcher(config);
-        RobotstxtConfig robotstxtConfig = new RobotstxtConfig();
-        RobotstxtServer robotstxtServer = new RobotstxtServer(robotstxtConfig, pageFetcher);
-        CrawlController controller = null;
-        try {
-            controller = new CrawlController(config, pageFetcher, robotstxtServer);
-            controller.addSeed("http://setec.mk/");
-            controller.startNonBlocking(factory, numberOfCrawlers);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
-    private void addTehnomarket() {
-        productService.addSeller(new Seller(Constants.TEHNOMARKET, Constants.TEHNOMARKET_IMAGE_URL));
 
-        String crawlStorageFolder = System.getProperty("user.dir") + "/tmp/crawl/root/tehnomarket";
-        int numberOfCrawlers = 7;
-        TehnomarketCrawlerControllerFactory factory = new TehnomarketCrawlerControllerFactory(this);
-        CrawlConfig config = new CrawlConfig();
-        config.setCrawlStorageFolder(crawlStorageFolder);
-        config.setMaxDepthOfCrawling(3);
-        config.setPolitenessDelay(100);
-        PageFetcher pageFetcher = new PageFetcher(config);
-        RobotstxtConfig robotstxtConfig = new RobotstxtConfig();
-        RobotstxtServer robotstxtServer = new RobotstxtServer(robotstxtConfig, pageFetcher);
-        CrawlController controller;
-        try {
-            controller = new CrawlController(config, pageFetcher, robotstxtServer);
-            controller.addSeed("http://tehnomarket.com.mk/");
-            controller.startNonBlocking(factory, numberOfCrawlers);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
-    private void addNeptun() {
-        productService.addSeller(new Seller(Constants.NEPTUN, Constants.NEPTUN_IMAGE_URL));
 
-        String crawlStorageFolder = System.getProperty("user.dir") + "/tmp/crawl/root/neptun";
-        int numberOfCrawlers = 7;
-        NeptunCrawlerControllerFactory factory = new NeptunCrawlerControllerFactory(this);
-        CrawlConfig config = new CrawlConfig();
-        config.setCrawlStorageFolder(crawlStorageFolder);
-        config.setMaxDepthOfCrawling(4);
-        config.setPolitenessDelay(100);
-        PageFetcher pageFetcher = new PageFetcher(config);
-        RobotstxtConfig robotstxtConfig = new RobotstxtConfig();
-        RobotstxtServer robotstxtServer = new RobotstxtServer(robotstxtConfig, pageFetcher);
-        CrawlController controller;
-        try {
-            controller = new CrawlController(config, pageFetcher, robotstxtServer);
-            controller.addSeed("http://www.neptun.mk/index.php?route=common/home");
-            controller.addSeed("http://www.neptun.mk/index.php?route=product/category&path=2");
-            controller.startNonBlocking(factory, numberOfCrawlers);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 }

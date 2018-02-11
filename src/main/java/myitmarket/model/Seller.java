@@ -14,14 +14,14 @@ public class Seller {
     private String name;
     @ElementCollection
     private List<Offer> offers;
-    private String imageUrl;
+    private String image;
 
     public Seller() {
     }
 
     public Seller(String name, String imageUrl) {
         this.name = name;
-        this.imageUrl = imageUrl;
+        this.image = imageUrl;
     }
 
     public long getId() {
@@ -50,11 +50,11 @@ public class Seller {
         this.offers = offers;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getImage() {
+        return image;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setImage(String image) {
+        this.image = image;
     }
 }
