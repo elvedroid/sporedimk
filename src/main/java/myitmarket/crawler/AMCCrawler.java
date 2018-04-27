@@ -29,7 +29,7 @@ public class AMCCrawler extends WebCrawler {
     @Override
     public void visit(Page page) {
         if (page.getWebURL().getURL().contains("product")) {
-//            String productName = "";
+            String productName = "";
 //            Category category = new Category();
 //            HtmlParseData htmlParseData = (HtmlParseData) page.getParseData();
 //            Document doc = Jsoup.parse(htmlParseData.getHtml());

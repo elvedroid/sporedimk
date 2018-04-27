@@ -27,6 +27,7 @@ public class CrawlerUtils {
         try {
             controller = new CrawlController(config, pageFetcher, robotstxtServer);
             controller.addSeed("http://setec.mk/");
+            controller.addSeed("http://setec.mk/index.php?route=product/category&path=10002");
             controller.startNonBlocking(factory, numberOfCrawlers);
         } catch (Exception e) {
             e.printStackTrace();

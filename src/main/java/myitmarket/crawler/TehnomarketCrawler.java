@@ -79,7 +79,7 @@ public class TehnomarketCrawler extends WebCrawler {
                 listener.addOffer(Constants.TEHNOMARKET, offer);
 
                 counter++;
-                if (counter >= 50) {
+                if (counter >= 100) {
                     getMyController().shutdown();
                 }
             }

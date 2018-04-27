@@ -3,25 +3,50 @@
 @prefix xhv:   <http://www.w3.org/1999/xhtml/vocab#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix offs:  <http://purl.org/net/esm-owl/offers#> .
 @prefix strs:  <http://purl.org/net/esm-owl/stores#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
-@prefix cat:   <http://purl.org/net/esm-owl/categories#> .
 @prefix favs:  <http://purl.org/net/esm-owl/favorites#> .
+@prefix cat:   <http://purl.org/net/esm-owl/categories#> .
 @prefix vcard30: <http://www.w3.org/2001/vcard-rdf/3.0#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+favs:Samsung_Galaxy_Note_8_NEW_2017
+        rdf:value      "2"^^xsd:int ;
+        vcard30:AGENT  prods:Samsung_Galaxy_Note_8_NEW_2017 ;
+        foaf:phone     "egUyMpRLk4w" , "c-5TqEXVP5o" .
+
+favs:ASUS_X541NA_GO206__SILVER_
+        rdf:value      "1"^^xsd:int ;
+        vcard30:AGENT  prods:ASUS_X541NA_GO206__SILVER_ ;
+        foaf:phone     "c-5TqEXVP5o" .
+
+favs:ASUS_X541NA_GO134__RED_
+        rdf:value      "2"^^xsd:int ;
+        vcard30:AGENT  prods:ASUS_X541NA_GO134__RED_ ;
+        foaf:phone     "c-5TqEXVP5o" , "eARFknmInlM" .
+
+favs:SAMSUNG_EC_ST_72_4GB_BAG_White
+        rdf:value      "1"^^xsd:long ;
+        vcard30:AGENT  prods:SAMSUNG_EC_ST_72_4GB_BAG_White ;
+        foaf:phone     "c-5TqEXVP5o" .
+
+favs:acer_es1_533_c9w1_n3350_4_500_nx_gftex_018
+        rdf:value      "2"^^xsd:int ;
+        vcard30:AGENT  prods:acer_es1_533_c9w1_n3350_4_500_nx_gftex_018 ;
+        foaf:phone     "dmxKs_ff4U8" , "fqoJV2PGcy0" .
+
+favs:Tristar_SA_1124  rdf:value  "2"^^xsd:int ;
+        vcard30:AGENT  prods:Tristar_SA_1124 ;
+        foaf:phone     "eARFknmInlM" , "fqoJV2PGcy0" .
 
 favs:Kenwood_HB680  rdf:value  "1"^^xsd:long ;
         vcard30:AGENT  prods:Kenwood_HB680 ;
         foaf:phone     "egUyMpRLk4w" .
 
-favs:Tristar_SA_1124  rdf:value  "1"^^xsd:long ;
-        vcard30:AGENT  prods:Tristar_SA_1124 ;
-        foaf:phone     "eARFknmInlM" .
-
-favs:FAVIO_VS_4316  rdf:value  "2"^^xsd:long ;
+favs:FAVIO_VS_4316  rdf:value  "4"^^xsd:int ;
         vcard30:AGENT  prods:FAVIO_VS_4316 ;
-        foaf:phone     "eARFknmInlM" .
+        foaf:phone     "eARFknmInlM" , "c-5TqEXVP5o" , "dmxKs_ff4U8" .

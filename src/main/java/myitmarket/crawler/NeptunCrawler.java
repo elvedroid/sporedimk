@@ -69,7 +69,7 @@ public class NeptunCrawler extends WebCrawler {
 
                 listener.addOffer(Constants.NEPTUN, offer);
                 count++;
-                if (count >= 10) {
+                if (count >= 100) {
                     getMyController().shutdown();
                 }
             }

@@ -58,7 +58,7 @@ public class NikoCrawler extends WebCrawler {
 
                 listener.addOffer(Constants.NIKO, offer);
                 count++;
-                if (count >= 2) {
+                if (count >= 100) {
                     getMyController().shutdown();
                 }
             }

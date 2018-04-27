@@ -18,183 +18,183 @@ import static myitmarket.utils.Constants.*;
 import static myitmarket.utils.Constants.BRANDS_OWL_URL;
 
 public class UpdateUtils {
-    private static final Logger log = LoggerFactory.getLogger(UpdateUtils.class);
+  private static final Logger log = LoggerFactory.getLogger(UpdateUtils.class);
 
-    public static void setUpModel(Model model, String modelURL) throws IOException {
-        URL url = new URL(modelURL);
+  public static void setUpModel(Model model, String modelURL) throws IOException {
+    URL url = new URL(modelURL);
 
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setReadTimeout(5000);
+    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+    conn.setReadTimeout(5000);
 
-        String newUrl = conn.getHeaderField("Location");
-        conn = (HttpURLConnection) new URL(newUrl).openConnection();
+    String newUrl = conn.getHeaderField("Location");
+    conn = (HttpURLConnection) new URL(newUrl).openConnection();
 
-        BufferedReader in = new BufferedReader(
-                new InputStreamReader(conn.getURL().openStream()));
-        model.read(in, null);
-        in.close();
+    BufferedReader in = new BufferedReader(
+            new InputStreamReader(conn.getURL().openStream()));
+    model.read(in, null);
+    in.close();
+  }
+
+  public static void setUpLocalModel(Model model, String modelURL) throws IOException {
+    InputStream in = FileManager.get().open(modelURL);
+    if (in == null) {
+      throw new IllegalArgumentException(
+              "File: " + modelURL + " not found");
     }
+    model.read(in, null, "TURTLE");
+    in.close();
+  }
 
-    public static void setUpLocalModel(Model model, String modelURL) throws IOException {
-        InputStream in = FileManager.get().open(modelURL);
-        if (in == null) {
-            throw new IllegalArgumentException(
-                    "File: " + modelURL + " not found");
-        }
-        model.read(in, null, "TURTLE");
-        in.close();
-    }
-
-    private static Resource createProductResource(Model productsModel, Product product) {
+  private static Resource createProductResource(Model productsModel, Product product) {
 //        Create product Resource
-        String resourceUri = PRODUCTS_URL + Utils.getUriReplacingChars(product.getName());
-        Resource resource = productsModel.getResource(resourceUri);
-        resource.addProperty(RDF.type, productsModel.getProperty(BASE_GR_URL, PRODUCT_OR_SERVICE_URL));
+    String resourceUri = PRODUCTS_URL + Utils.getUriReplacingChars(product.getName());
+    Resource resource = productsModel.getResource(resourceUri);
+    resource.addProperty(RDF.type, productsModel.getProperty(BASE_GR_URL, PRODUCT_OR_SERVICE_URL));
 
 //        Adding name property
-        Property prName = productsModel.getProperty(BASE_GR_URL, GRNAME_PROPERTY_URL);
-        resource.addProperty(prName, product.getName());
+    Property prName = productsModel.getProperty(BASE_GR_URL, GRNAME_PROPERTY_URL);
+    resource.addProperty(prName, product.getName());
 
 //        Adding brand property
-        Property prBrand = productsModel.getProperty(BASE_GR_URL, GRHAS_BRAND_PROPERTY_URL);
-        resource.addProperty(prBrand, getBrandResource(productsModel, product.getBrand()));
+    Property prBrand = productsModel.getProperty(BASE_GR_URL, GRHAS_BRAND_PROPERTY_URL);
+    resource.addProperty(prBrand, getBrandResource(productsModel, product.getBrand()));
 
 //        Adding image property
-        resource.addProperty(FOAF.made, product.getImage());
+    resource.addProperty(FOAF.made, product.getImage());
 
 //        Adding desc property
-        Property prDesc = productsModel.getProperty(BASE_GR_URL, GRDESC_PROPERTY_URL);
-        resource.addProperty(prDesc, product.getDescription());
+    Property prDesc = productsModel.getProperty(BASE_GR_URL, GRDESC_PROPERTY_URL);
+    resource.addProperty(prDesc, product.getDescription());
 
-        return resource;
-    }
+    return resource;
+  }
 
-    public static Resource createOfferResource(Model offersModel, Model productsModel, Offer offer) {
-//        Create offer Resource
-        String offerUri = OFFERS_URL + Utils.getUriReplacingChars(offer.getName());
-        Resource resource = offersModel.createResource(offerUri);
-        resource.addProperty(RDF.type, productsModel.getProperty(BASE_GR_URL, OFFERING_URL));
+  public static Resource createOfferResource(Model offersModel, Model productsModel, Offer offer) {
+  //        Create offer Resource
+    String offerUri = OFFERS_URL + Utils.getUriReplacingChars(offer.getName());
+    Resource resource = offersModel.createResource(offerUri);
+    resource.addProperty(RDF.type, productsModel.getProperty(BASE_GR_URL, OFFERING_URL));
+
+  //        Adding name property
+    Property prName = offersModel.getProperty(BASE_GR_URL, GRNAME_PROPERTY_URL);
+    resource.addProperty(prName, offer.getName());
+
+  //        Adding product property
+    Property prProduct = offersModel.getProperty(BASE_GR_URL, GRINCLUDES_PROPERTY_URL);
+    resource.addProperty(prProduct, createProductResource(productsModel, offer.getProduct()));
+
+  //        Adding category property
+    Property prCategory = offersModel.getProperty(BASE_GR_URL, GRCATEGORY_PROPERTY_URL);
+
+    resource.addProperty(prCategory, offer.getCategory().getName().replace(Constants.FILTER_CATEGORIES, "_"));
+
+  //        Adding Price Specification
+    Property prHasPriceSpecs = offersModel.getProperty(BASE_GR_URL, GRHAS_PRICE_SPECS_PROPERTY_URL);
+    resource.addProperty(prHasPriceSpecs, getPriceSpec(offersModel, offer.getPrice()));
+
+  //        Add url property
+    resource.addProperty(FOAF.made, offer.getUrl());
+    return resource;
+  }
+
+  private static Resource getPriceSpec(Model model, Price price) {
+    String priceUri = OFFERS_URL + Utils.getUriReplacingChars(price.getValue() + "__" + price.getUnit());
+    Resource priceResource = model.getResource(priceUri);
+    priceResource.addProperty(RDF.type, model.getProperty(BASE_GR_URL, UNIT_PRICE_SPECIFICATION_URL));
+
+    Property hasCurrency = model.getProperty(BASE_GR_URL, GRHAS_CURRENCY_PROPERTY_URL);
+    Property hasCurrencyValue = model.getProperty(BASE_GR_URL, GRHAS_CURRENCY_VALUE_PROPERTY_URL);
+
+    priceResource.addProperty(hasCurrency, price.getUnit());
+    priceResource.addLiteral(hasCurrencyValue, price.getValue());
+
+    return priceResource;
+  }
+
+  private static Resource getBrandResource(Model model, String brandName) {
+    String brandUri = BRANDS_OWL_URL + Utils.getUriReplacingChars(brandName);
+    Resource brandResource = model.getResource(brandUri);
 
 //        Adding name property
-        Property prName = offersModel.getProperty(BASE_GR_URL, GRNAME_PROPERTY_URL);
-        resource.addProperty(prName, offer.getName());
+    Property prName = model.getProperty(BASE_GR_URL, GRNAME_PROPERTY_URL);
+    brandResource.addProperty(prName, brandName);
 
-//        Adding product property
-        Property prProduct = offersModel.getProperty(BASE_GR_URL, GRINCLUDES_PROPERTY_URL);
-        resource.addProperty(prProduct, createProductResource(productsModel, offer.getProduct()));
+    return brandResource;
+  }
 
-//        Adding category property
-        Property prCategory = offersModel.getProperty(BASE_GR_URL, GRCATEGORY_PROPERTY_URL);
+  public static void addOfferingToSeller(Model model, String sellerName, Resource offering) {
+    String sellerUri = STORES_URL + Utils.getUriReplacingChars(sellerName);
+    Resource sellerResource = model.getResource(sellerUri);
+    Property prOffering = model.getProperty(BASE_GR_URL, GROFFERS_PROPERTY_URL);
+    sellerResource.addProperty(prOffering, offering);
+  }
 
-        resource.addProperty(prCategory, offer.getCategory().getName().replace(Constants.FILTER_CATEGORIES, "_"));
+  public static void writeModelToFile(Model model, String file) {
+    try {
+      OutputStream out = new FileOutputStream(file);
+      model.write(out, "TURTLE");
+      log.info(file);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
 
-//        Adding Price Specification
-        Property prHasPriceSpecs = offersModel.getProperty(BASE_GR_URL, GRHAS_PRICE_SPECS_PROPERTY_URL);
-        resource.addProperty(prHasPriceSpecs, getPriceSpec(offersModel, offer.getPrice()));
+  public static Boolean updateFavorites(Model favoritesModel, Model productModel, Favorites favorites) {
+    Resource favoritesResource = favoritesModel.createResource(FAVORITES_URL + Utils.getUriReplacingChars(favorites.getProductName()));
 
-//        Add url property
-        resource.addProperty(FOAF.made, offer.getUrl());
-        return resource;
+    String query = "PREFIX favs: <http://purl.org/net/esm-owl/favorites#>\n" +
+            "PREFIX foaf: <http://xmlns.com/foaf/0.1/>\n" +
+            "PREFIX vcard30: <http://www.w3.org/2001/vcard-rdf/3.0#>\n" +
+            "SELECT ?fav ?phone\n" +
+            "WHERE {\n" +
+            "?fav foaf:phone ?phone ." +
+            "?fav vcard30:AGENT <" + PRODUCTS_URL + Utils.getUriReplacingChars(favorites.getProductName()) + ">.\n" +
+            "FILTER(lcase(str(?phone)) = \"" + favorites.getAppID().toLowerCase() + "\" )" +
+            " }";
+
+    ResultSet resultSet = QueryUtils.executeQuery(favoritesModel, query);
+
+    int favs = 0;
+    if (favoritesResource.getProperty(RDF.value) != null) {
+      favs = favoritesResource.getProperty(RDF.value).getInt();
     }
 
-    private static Resource getPriceSpec(Model model, Price price) {
-        String priceUri = OFFERS_URL + Utils.getUriReplacingChars(price.getValue() + "__" + price.getUnit());
-        Resource priceResource = model.getResource(priceUri);
-        priceResource.addProperty(RDF.type, model.getProperty(BASE_GR_URL, UNIT_PRICE_SPECIFICATION_URL));
+    if (favorites.isFavorite()
+            && productModel.getResource(PRODUCTS_URL + Utils.getUriReplacingChars(favorites.getProductName())) != null) {
+      if (resultSet != null && resultSet.hasNext()) {
+        return Boolean.FALSE;
+      }
+      favoritesResource.addProperty(FOAF.phone, favorites.getAppID());
+      favoritesResource.addProperty(VCARD.AGENT, productModel.getResource(PRODUCTS_URL + Utils.getUriReplacingChars(favorites.getProductName())));
+      if (favoritesResource.getProperty(RDF.value) != null) {
+        favoritesResource.getProperty(RDF.value).changeLiteralObject(++favs);
+      } else {
+        favoritesResource.addLiteral(RDF.value, ++favs);
+      }
+      writeModelToFile(favoritesModel, FILE_FAVORITES);
+      return Boolean.TRUE;
+    } else {
+      if (resultSet == null || !resultSet.hasNext()) {
+        return Boolean.FALSE;
+      }
+      if (favs <= 1 || favoritesResource.getProperty(FOAF.phone) == null) {
+        favoritesModel.removeAll(favoritesResource, null, null);
+        writeModelToFile(favoritesModel, FILE_FAVORITES);
+        return Boolean.TRUE;
+      }
 
-        Property hasCurrency = model.getProperty(BASE_GR_URL, GRHAS_CURRENCY_PROPERTY_URL);
-        Property hasCurrencyValue = model.getProperty(BASE_GR_URL, GRHAS_CURRENCY_VALUE_PROPERTY_URL);
+      favoritesModel.remove(favoritesResource, FOAF.phone, ResourceFactory.createStringLiteral(favorites.getAppID()));
+      favoritesResource.getProperty(RDF.value).changeLiteralObject(--favs);
+      writeModelToFile(favoritesModel, FILE_FAVORITES);
 
-        priceResource.addProperty(hasCurrency, price.getUnit());
-        priceResource.addLiteral(hasCurrencyValue, price.getValue());
-
-        return priceResource;
+      return Boolean.TRUE;
     }
+  }
 
-    private static Resource getBrandResource(Model model, String brandName) {
-        String brandUri = BRANDS_OWL_URL + Utils.getUriReplacingChars(brandName);
-        Resource brandResource = model.getResource(brandUri);
-
-//        Adding name property
-        Property prName = model.getProperty(BASE_GR_URL, GRNAME_PROPERTY_URL);
-        brandResource.addProperty(prName, brandName);
-
-        return brandResource;
-    }
-
-    public static void addOfferingToSeller(Model model, String sellerName, Resource offering) {
-        String sellerUri = STORES_URL + Utils.getUriReplacingChars(sellerName);
-        Resource sellerResource = model.getResource(sellerUri);
-        Property prOffering = model.getProperty(BASE_GR_URL, GROFFERS_PROPERTY_URL);
-        sellerResource.addProperty(prOffering, offering);
-    }
-
-    public static void writeModelToFile(Model model, String file) {
-        try {
-            OutputStream out = new FileOutputStream(file);
-            model.write(out, "TURTLE");
-            log.info(file);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static Boolean updateFavorites(Model favoritesModel, Model productModel, Favorites favorites) {
-        Resource favoritesResource = favoritesModel.createResource(FAVORITES_URL + Utils.getUriReplacingChars(favorites.getProductName()));
-
-        String query = "PREFIX favs: <http://purl.org/net/esm-owl/favorites#>\n" +
-                "PREFIX foaf: <http://xmlns.com/foaf/0.1/>\n" +
-                "PREFIX vcard30: <http://www.w3.org/2001/vcard-rdf/3.0#>\n" +
-                "SELECT ?fav ?phone\n" +
-                "WHERE {\n" +
-                "?fav foaf:phone ?phone ." +
-                "?fav vcard30:AGENT <" + PRODUCTS_URL + Utils.getUriReplacingChars(favorites.getProductName()) + ">.\n" +
-                "FILTER(lcase(str(?phone)) = \"" + favorites.getAppID().toLowerCase() + "\" )" +
-                " }";
-
-        ResultSet resultSet = QueryUtils.executeQuery(favoritesModel, query);
-
-        int favs = 0;
-        if (favoritesResource.getProperty(RDF.value) != null) {
-            favs = favoritesResource.getProperty(RDF.value).getInt();
-        }
-
-        if (favorites.isFavorite()
-                && productModel.getResource(PRODUCTS_URL + Utils.getUriReplacingChars(favorites.getProductName())) != null) {
-            if (resultSet != null && resultSet.hasNext()) {
-                return Boolean.FALSE;
-            }
-            favoritesResource.addProperty(FOAF.phone, favorites.getAppID());
-            favoritesResource.addProperty(VCARD.AGENT, productModel.getResource(PRODUCTS_URL + Utils.getUriReplacingChars(favorites.getProductName())));
-            if (favoritesResource.getProperty(RDF.value) != null) {
-                favoritesResource.getProperty(RDF.value).changeLiteralObject(++favs);
-            } else {
-                favoritesResource.addLiteral(RDF.value, ++favs);
-            }
-            writeModelToFile(favoritesModel, FILE_FAVORITES);
-            return Boolean.TRUE;
-        } else {
-            if (resultSet == null || !resultSet.hasNext()) {
-                return Boolean.FALSE;
-            }
-            if (favs <= 1 || favoritesResource.getProperty(FOAF.phone) == null) {
-                favoritesModel.removeAll(favoritesResource, null, null);
-                writeModelToFile(favoritesModel, FILE_FAVORITES);
-                return Boolean.TRUE;
-            }
-
-            favoritesModel.remove(favoritesResource, FOAF.phone, ResourceFactory.createStringLiteral(favorites.getAppID()));
-            favoritesResource.getProperty(RDF.value).changeLiteralObject(--favs);
-            writeModelToFile(favoritesModel, FILE_FAVORITES);
-
-            return Boolean.TRUE;
-        }
-    }
-
-    public static void addSeller(Model tmpStoresModel, Seller seller) {
-        String priceUri = STORES_URL + seller.getName();
-        Resource priceResource = tmpStoresModel.getResource(priceUri);
-        priceResource.addProperty(RDF.type, tmpStoresModel.getProperty(BASE_GR_URL, GRSTORE_PROPERTY_URL));
-        priceResource.addLiteral(FOAF.made, seller.getImage());
-    }
+  public static void addSeller(Model tmpStoresModel, Seller seller) {
+    String priceUri = STORES_URL + seller.getName();
+    Resource priceResource = tmpStoresModel.getResource(priceUri);
+    priceResource.addProperty(RDF.type, tmpStoresModel.getProperty(BASE_GR_URL, GRSTORE_PROPERTY_URL));
+    priceResource.addLiteral(FOAF.made, seller.getImage());
+  }
 }
