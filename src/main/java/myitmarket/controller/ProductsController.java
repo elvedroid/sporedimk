@@ -1,6 +1,7 @@
 package myitmarket.controller;
 
 import myitmarket.utils.CrawlerUtils;
+import myitmarket.utils.Filter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,10 +30,11 @@ public class ProductsController implements CrawlerContract {
 
   @Scheduled(fixedDelay = 14 * 24 * 60 * 60 * 1000)
   public void addSellers() {
-    productService.addSeller(new Seller(Constants.SETEC, Constants.SETEC_IMAGE_URL));
-    CrawlerUtils.addSetec(this);
-//    productService.addSeller(new Seller(Constants.ANHOCH, Constants.ANHOCH_IMAGE_URL));
-//    CrawlerUtils.addAnhoch(this);
+    if (Filter.shouldLoadData) {
+      productService.addSeller(new Seller(Constants.SETEC, Constants.SETEC_IMAGE_URL));
+      CrawlerUtils.addSetec(this);
+    }
+
     log.info("The time is now {}", dateFormat.format(new Date()));
   }
 
